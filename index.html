@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Marta Coleções</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto+Slab:wght@700&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="/css/menu.css">
+	<link rel="stylesheet" href="./css/style.css" />
+</head>
+<header class="header" id="header">
+	<nav class="nav container">
+		<img src="img/logo-roupa.jpg"
+			style="width:12%;position: absolute; left: 0; border-radius:6px; margin-left: 40px;" alt="" class="nav_img">
+		<div class="nav__menu" id="nav-menu">
+			<ul class="nav__list">
+				<li class="nav__item">
+					<a href="index.html" class="nav__link active-link">
+						<i class='bx bx-home-alt nav__icon'></i>
+						<span class="nav__name">Mulheres</span>
+					</a>
+				</li>
+
+				<li class="nav__item">
+					<a href="Institucional.html" class="nav__link">
+						<i class='bx bx-plus-medical nav__icon'></i>
+						<span class="nav__name">Homens</span>
+					</a>
+				</li>
+
+				<li class="nav__item">
+					<a href="Unidades.html" class="nav__link">
+						<i class='bx bx-buildings nav__icon'></i>
+						<span class="nav__name">Acessórios</span>
+					</a>
+				</li>
+
+				<li class="nav__item">
+					<a href="Transparencia.html" class="nav__link">
+						<i class='bx bx-file-blank nav__icon'></i>
+						<span class="nav__name">Novidades</span>
+					</a>
+				</li>
+				<li class="nav__item">
+					<a href="Oportunidades.html" class="nav__link">
+						<i class='bx bx-group nav__icon'></i>
+						<span class="nav__name">Contatos</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<a href="#" class="button carrinho">
+			<img class="button-icon" src="./img/cart.svg" alt="icon: cart" />
+			<span class="button-text">Carrinho</span>
+		</a>
+		<!-- LOGO COMO PERFIL
+				<img src="img/Logo CHS.png" alt="" class="nav__img">
+				-->
+	</nav>
+	<!-- /.row -->
+</header>
+
+<body>
+	<div class="slider swiper-container">
+		<div class="swiper-wrapper">
+			<section class="slide slide-1 swiper-slide">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 col-10 offset-lg-1">
+							<span class="label">Mais vendidos</span>
+							<h2 class="slide-title">Suéter de gola alta</h2>
+							<p class="slide-description">
+								Suéter básico de tricô com pérolas para mulheres, com decote Vermelhoondo. Disponível em
+								várias cores. Frete grátis para lojas.
+							</p>
+							<a href="#" class="button button--shop">
+								<span class="button-price">$319</span>
+								<span class="button-text">Compre agora</span>
+							</a>
+						</div>
+						<!-- /.col-4 offset-lg-1 -->
+					</div>
+				</div>
+				<!-- /.container -->
+			</section>
+			<section class="slide slide-2 swiper-slide">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 col-10 offset-lg-1">
+							<span class="label">Mais vendidos</span>
+							<h2 class="slide-title text-light">
+								Camisa estampada com um laço
+							</h2>
+							<p class="slide-description text-light">
+								Suéter básico de tricô com pérolas para mulheres, com gola Vermelhoonda. Disponível em várias
+								cores. Frete grátis para lojas.
+							</p>
+							<a href="#" class="button button--shop">
+								<span class="button-price">$129</span>
+								<span class="button-text">Compre agora</span>
+							</a>
+						</div>
+						<!-- /.col-4 offset-lg-1 -->
+					</div>
+				</div>
+				<!-- /.container -->
+			</section>
+			<section class="slide slide-3 swiper-slide">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 col-10 offset-lg-1">
+							<span class="label">Mais vendidos</span>
+							<h2 class="slide-title">
+								Blusa com laço nas mangas
+							</h2>
+							<p class="slide-description">
+								Suéter básico de tricô com pérolas para mulheres, com gola Vermelhoonda. Disponível em várias
+								cores. Frete grátis para lojas.
+							</p>
+							<a href="#" class="button button--shop">
+								<span class="button-price">$129</span>
+								<span class="button-text">Compre agora</span>
+							</a>
+						</div>
+						<!-- /.col-4 offset-lg-1 -->
+					</div>
+				</div>
+				<!-- /.container -->
+			</section>
+		</div>
+		<!-- /.swiper-wrapper -->
+
+		<div class="slider-nav">
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-1">
+						<button class="slider-button slider-button-prev">
+							<img src="./img/arrow-prev.svg" alt="icon-prev" />
+						</button>
+					</div>
+					<!-- /.col-1 -->
+					<div class="col-1">
+						<button class="slider-button slider-button-next">
+							<img src="./img/arrow-next.svg" alt="icon-next" />
+						</button>
+					</div>
+					<!-- /.col-1 -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</div>
+		<!-- /.slider-nav -->
+	</div>
+	<!-- /.slider -->
+
+
+	<div class="container pt-5 pb-4">
+		<div class="row mb-4">
+			<div class="col-xl-6">
+				<div class="card card-1 mb-4">
+					<h3 class="card-title">
+						Verifique os produtos mais vendidos:
+					</h3>
+					<p class="card-text">
+						Bolsas, Acessórios, Lingerie, Roupas Esportivas, Beleza e Moda Praia
+					</p>
+					<a href="#" class="button">
+						<span class="button-text">Confira</span>
+						<img src="./img/arrow.svg" alt="icon: arrow" class="button-icon" />
+					</a>
+				</div>
+				<!-- /.card -->
+			</div>
+
+			<!-- /.col-6 -->
+			<div class="col-xl-6">
+				<div class="card card-2 mb-4">
+					<h3 class="card-title text-light">
+						Alcance o sol: Roupas para o verão por R $30
+					</h3>
+					<p class="card-text text-light">
+						Suéteres, Moletons com Capuz, Jaquetas Acolchoadas, Casacos e Jaquetas de Tricô
+					</p>
+					<a href="#" class="button">
+						<span class="button-text">Confira</span>
+						<img src="./img/arrow.svg" alt="icon: arrow" class="button-icon" />
+					</a>
+				</div>
+				<!-- /.card -->
+			</div>
+			<!-- /.col-6 -->
+			<div class="col-xl-9 col-lg-6">
+				<div class="card card-3 mb-4">
+					<span class="label">Mais vendidos</span>
+					<h3 class="card-title large">
+						De mulheres para mulheres<br />
+					</h3>
+					<p class="card-text large">
+						Produtos com desconto
+					</p>
+					<a href="#" class="button button--shop">
+						<span class="button-price">$129</span>
+						<span class="button-text">Compre agora</span>
+					</a>
+				</div>
+				<!-- /.card -->
+			</div>
+			<!-- /.col-9 -->
+			<div class="col-xl-3 col-lg-6">
+				<div class="card card-4">
+					<h3 class="card-title text-light">
+						Acessórios mais vendidos
+					</h3>
+					<p class="card-text text-light">Óculos, Colares e Joias</p>
+					<span class="card-price"> $129 </span>
+				</div>
+				<!-- /.card -->
+			</div>
+			<!-- /.col-3 -->
+		</div>
+		<!-- /.row -->
+
+		<div class="row align-items-center mb-4">
+			<div class="col-9">
+				<h2 class="section-title">Novos Produtos</h2>
+			</div>
+			<!-- /.col-9 -->
+			<div class="col-3 d-flex justify-content-end">
+				<a href="#" class="more">Confira</a>
+			</div>
+			<!-- /.col-3 -->
+		</div>
+		<!-- /.row -->
+
+		<div class="row">
+			<div class="col-lg-3 col-sm-6">
+				<a href="#" class="goods-card">
+					<span class="label">Novos</span>
+					<!-- /.label -->
+					<img src="./img/goods-image-1.jpg" alt="image: Hoodie" class="goods-image" />
+					<h3 class="goods-title">Moletom Vermelho com Capuz</h3>
+					<!-- /.goods-title -->
+					<p class="goods-description">
+						Yellow/Lilás/Fúcsia/Laranja
+					</p>
+					<!-- /.goods-description -->
+					<span class="goods-price">$89</span>
+					<!-- /.goods-price -->
+				</a>
+				<!-- /.goods-card -->
+			</div>
+			<!-- /.col-3 -->
+
+			<div class="col-lg-3 col-sm-6">
+				<a href="#" class="goods-card">
+					<span class="label">Novos</span>
+					<!-- /.label -->
+					<img src="./img/goods-image-2.jpg" alt="image: Faded Beach Trousers" class="goods-image" />
+					<h3 class="goods-title">Calça Desbotada</h3>
+					<!-- /.goods-title -->
+					<p class="goods-description">Azul Marinho/Amarelo/Preto/Caqui</p>
+					<!-- /.goods-description -->
+					<span class="goods-price">$139</span>
+					<!-- /.goods-price -->
+				</a>
+				<!-- /.goods-card -->
+			</div>
+			<!-- /.col-3 -->
+
+			<div class="col-lg-3 col-sm-6">
+				<a href="#" class="goods-card">
+					<span class="label">Novos</span>
+					<!-- /.label -->
+					<img src="./img/goods-image-3.jpg" alt="image: Text Camisa" class="goods-image" />
+					<h3 class="goods-title">Camisa</h3>
+					<!-- /.goods-title -->
+					<p class="goods-description">Branco</p>
+					<!-- /.goods-description -->
+					<span class="goods-price">$59</span>
+					<!-- /.goods-price -->
+				</a>
+				<!-- /.goods-card -->
+			</div>
+			<!-- /.col-3 -->
+
+			<div class="col-lg-3 col-sm-6">
+				<a href="#" class="goods-card">
+					<span class="label">Novos</span>
+					<!-- /.label -->
+					<img src="./img/goods-image-4.jpg" alt="image: Striped Long Sleeve Shirt" class="goods-image" />
+					<h3 class="goods-title">Camisa de Manga Longa Listrada</h3>
+					<!-- /.goods-title -->
+					<p class="goods-description">Vermelho/Branco</p>
+					<!-- /.goods-description -->
+					<span class="goods-price">$119</span>
+					<!-- /.goods-price -->
+				</a>
+				<!-- /.goods-card -->
+			</div>
+			<!-- /.col-3 -->
+		</div>
+		<!-- /.row -->
+
+		<div class="row">
+			<div class="col-lg-3 col-sm-6">
+				<a href="#" class="goods-card">
+					<span class="label">Novos</span>
+					<!-- /.label -->
+					<img src="./img/goods-image-1.jpg" alt="image: Hoodie" class="goods-image" />
+					<h3 class="goods-title">Moletom Vermelho com Capuz</h3>
+					<!-- /.goods-title -->
+					<p class="goods-description">
+						Yellow/Lilás/Fúcsia/Laranja
+					</p>
+					<!-- /.goods-description -->
+					<span class="goods-price">$89</span>
+					<!-- /.goods-price -->
+				</a>
+				<!-- /.goods-card -->
+			</div>
+			<!-- /.col-3 -->
+
+			<div class="col-lg-3 col-sm-6">
+				<a href="#" class="goods-card">
+					<span class="label">Novos</span>
+					<!-- /.label -->
+					<img src="./img/goods-image-2.jpg" alt="image: Faded Beach Trousers" class="goods-image" />
+					<h3 class="goods-title">Calça Desbotada</h3>
+					<!-- /.goods-title -->
+					<p class="goods-description">Azul Marinho/Amarelo/Preto/Caqui</p>
+					<!-- /.goods-description -->
+					<span class="goods-price">$139</span>
+					<!-- /.goods-price -->
+				</a>
+				<!-- /.goods-card -->
+			</div>
+			<!-- /.col-3 -->
+
+			<div class="col-lg-3 col-sm-6">
+				<a href="#" class="goods-card">
+					<span class="label">Novos</span>
+					<!-- /.label -->
+					<img src="./img/goods-image-3.jpg" alt="image: Text Camisa" class="goods-image" />
+					<h3 class="goods-title">Camisa</h3>
+					<!-- /.goods-title -->
+					<p class="goods-description">Branco</p>
+					<!-- /.goods-description -->
+					<span class="goods-price">$59</span>
+					<!-- /.goods-price -->
+				</a>
+				<!-- /.goods-card -->
+			</div>
+			<!-- /.col-3 -->
+
+			<div class="col-lg-3 col-sm-6">
+				<a href="#" class="goods-card">
+					<span class="label">Novos</span>
+					<!-- /.label -->
+					<img src="./img/goods-image-4.jpg" alt="image: Striped Long Sleeve Shirt" class="goods-image" />
+					<h3 class="goods-title">Camisa de Manga Longa Listrada</h3>
+					<!-- /.goods-title -->
+					<p class="goods-description">Vermelho/Branco</p>
+					<!-- /.goods-description -->
+					<span class="goods-price">$119</span>
+					<!-- /.goods-price -->
+				</a>
+				<!-- /.goods-card -->
+			</div>
+			<!-- /.col-3 -->
+		</div>
+		<!-- /.row -->
+
+	</div>
+	<!-- /.container -->
+
+
+
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-7 mb-4 mb-xl-0">
+					<nav>
+						<ul class="footer-menu d-sm-flex">
+							<li class="footer-menu-item">
+								<a href="#" class="footer-menu-link">Loja</a>
+							</li>
+							<li class="footer-menu-item">
+								<a href="#" class="footer-menu-link">Sobre Nós</a>
+							</li>
+							<li class="footer-menu-item">
+								<a href="#" class="footer-menu-link">Contatos</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- /.col-7 -->
+				<div class="col-lg-3 d-flex align-items-center">
+					<span class="footer-text">Nos siga</span>
+					<span class="footer-social d-inline-flex align-items-center">
+						<a href="#" class="social-link"><img src="./img/facebook.svg" alt="facebook" /></a>
+						<a href="#" class="social-link"><img src="./img/twitter.svg" alt="twitter" /></a>
+						<a href="#" class="social-link"><img src="./img/instagram.svg" alt="instagram" /></a>
+					</span>
+				</div>
+				<!-- /.col-7 -->
+				<div class="col-xl-2 col-lg-3 d-flex justify-content-lg-end mt-4 mt-lg-0">
+					<span class="footer-text">© 2023 Marta Coleções</span>
+				</div>
+				<!-- /.col-2 -->
+			</div>
+			<!-- /.row -->
+			<hr class="footer-line mt-4 mb-4" />
+			<div class="row justify-content-between">
+				<div class="col-lg-4 col-sm-9 footer-payment">
+					<img class="payment-logo" src="./img/visa.png" alt="visa logo" />
+					<img class="payment-logo" src="./img/mastercard.png" alt="mastercard logo" />
+					<img class="payment-logo" src="./img/paypal.png" alt="paypal logo" />
+				</div>
+				<!-- /.col-4 -->
+				<div class="col-lg-2 col-sm-3 d-flex justify-content-end">
+					<a href="#" class="top-link d-flex align-items-center">
+						<span class="top-link-text">Top</span>
+						<img src="./img/top-arrow.svg" alt="icon: arrow top" />
+					</a>
+				</div>
+				<!-- /.col-2 -->
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+	</footer>
+	<!-- /.footer -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+
+</html>
