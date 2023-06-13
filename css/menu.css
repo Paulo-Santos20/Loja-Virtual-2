@@ -180,7 +180,7 @@
     }
   
     .nav__link:hover {
-      color: var(--first-color);
+      color: #b39354;
     }
   
     /* First design, remove if you choose the minimalist design */
