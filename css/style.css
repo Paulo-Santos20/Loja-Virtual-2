@@ -25,7 +25,7 @@ body {
   line-height: 20px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  color: #939699;
+  color: #f3f5f7;
 }
 .button {
   padding: 10px 20px;
@@ -276,6 +276,8 @@ body {
   .slider-nav {
     display: none;
   }
+  .footer {
+    margin-bottom: 50px;
 }
 @media (max-width: 576px) {
   .slide-title {
