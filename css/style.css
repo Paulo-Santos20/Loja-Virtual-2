@@ -46,7 +46,7 @@ main .cabecalho {
   border-radius: 3px;
 }
 .cabecalho p span_container:hover {
-  background: #222;
+  background: #b39354;
   color: white;
 }
 section {
@@ -106,7 +106,7 @@ small {
   font-size: 15px;
   margin: 60px 0 0 35px;
   display: inline-block;
-  background: #6773ff;
+  background: #b39354;
   color: white;
   border-radius: 8px;
 }
@@ -122,12 +122,6 @@ small {
   line-height: 30px;
 }
 
-p.star {
-  margin: 5px auto;
-  width: 65%;
-  font-size: 25px;
-  color: #808080;
-}
 @media (max-width: 768px) {
   .text h1 {
     font-size: 35px;
@@ -174,7 +168,7 @@ p.star {
   padding: 10px 20px;
   display: inline-flex;
   align-items: center;
-  background: #4592ff;
+  background: #b39354;
   border-radius: 20px;
   border: none;
   color: #fff;
