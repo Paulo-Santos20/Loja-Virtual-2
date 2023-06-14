@@ -118,7 +118,8 @@ small {
 }
 .preco_novo{
   color: #b17704;
-  font-weight: 800;
+  font-weight: 900;
+  line-height: 30px;
 }
 
 p.star {
@@ -196,22 +197,8 @@ p.star {
 .button--shop {
   padding: 10px 25px;
 }
-.slide {
-  max-height: 570px;
-  padding-top: 90px;
-  padding-bottom: 110px;
-}
-.slide-1 {
-  background: #b4d1e0 url("../img/slide-image-1.png") no-repeat top right 15px;
-}
-.slide-2 {
-  background: #ff4f52 url("../img/card-image-4.png") no-repeat top right /
-    contain;
-}
-.slide-3 {
-  background: #ccd5e6 url("../img/card-image-3.png") no-repeat top right /
-    contain;
-}
+
+
 .label {
   display: inline-block;
   padding: 5px 12px;
@@ -221,38 +208,7 @@ p.star {
   font-size: 12px;
   line-height: 15px;
 }
-.slide-title {
-  font-family: "Roboto Slab", serif;
-  font-size: 55px;
-  line-height: 70px;
-  color: #262d33;
-  margin-top: 20px;
-  margin-bottom: 15px;
-}
-.slide-description {
-  max-width: 335px;
-  margin-bottom: 40px;
-  font-size: 18px;
-  line-height: 30px;
-  color: #4b5157;
-}
-.slider {
-  position: relative;
-  margin-top: 70px;
-}
-.slider-nav {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  transform: translateY(-50%);
-  z-index: 9;
-}
-.slider-button {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
+
 .card {
   min-height: 370px;
   border-radius: 10px;
@@ -263,7 +219,7 @@ p.star {
   background-size: cover;
 }
 .card-2 {
-  background: #000 url("../img/card-image-2.jpg") no-repeat top right;
+  background: #640c0c url("../img/card-image-2.jpg") no-repeat top right;
   background-size: cover;
 }
 .card-3 {
@@ -274,7 +230,7 @@ p.star {
 .card-4 {
   padding-top: 35px;
   padding-left: 25px;
-  background: #ff4f52 url("../img/card-image-4.png") no-repeat top right;
+  background: #eb8586 url("../img/card-image-4.png") no-repeat top right;
   background-size: contain;
 }
 .card-title {
@@ -350,12 +306,7 @@ p.star {
   line-height: 20px;
   color: #4b5157;
 }
-.goods-price {
-  color: #262d33;
-  font-size: 18px;
-  font-weight: 900;
-  line-height: 30px;
-}
+
 .footer {
   padding: 45px 0 40px;
   background: #b39354;
