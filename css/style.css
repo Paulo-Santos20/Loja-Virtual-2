@@ -1,30 +1,29 @@
-
 /*--Slider*/
-main{
-  width: 100%;
-  height: 840px;
+main {
+  width: 83%;
+  height: 640px;
   /*background: red;*/
   margin: 10px auto;
   position: relative;
   padding: 5px 0;
 }
-main .text{
+main .text {
   padding: 10px;
   text-align: center;
   /*font-size: 30px;*/
   color: #554;
 }
-.text h1{
+.text h1 {
   font-size: 50px;
 }
-.text p{
+.text p {
   width: 60%;
   padding: 5px;
   margin: auto;
   line-height: 30px;
 }
-main .cabecalho{
-  width: 98%;
+main .cabecalho {
+  width: 90%;
   height: 60px;
   margin: 0 auto;
   /*background: gray;*/
@@ -34,24 +33,24 @@ main .cabecalho{
   justify-content: space-between;
   border-bottom: 2px solid #ddd;
 }
-.cabecalho p span_container{
+.cabecalho p span_container {
   font-size: 40px;
-    margin: 0 5px;
-    cursor: pointer;
-    color: #555;
-     width: 30px;
-    height: 30px;
-    display: inline-block;
-    line-height: 19px;
-    text-align: center;
-    border-radius: 3px;
+  margin: 0 5px;
+  cursor: pointer;
+  color: #555;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  line-height: 19px;
+  text-align: center;
+  border-radius: 3px;
 }
-.cabecalho p span_container:hover{
+.cabecalho p span_container:hover {
   background: #222;
-    color: white;
+  color: white;
 }
-section{
-  width: 98%;
+section {
+  width: 100%;
   height: 600px;
   /*background: red;*/
   margin: auto;
@@ -59,20 +58,20 @@ section{
   align-items: center;
   overflow-x: auto;
 }
-section::-webkit-scrollbar{
+section::-webkit-scrollbar {
   display: none;
 }
-section .product{
+section .product {
   min-width: 24%;
   height: 90%;
   background: whitesmoke;
-  margin:  0 20px  0 0;
+  margin: 0 20px 0 0;
   border-radius: 20px;
   position: relative;
   left: 0;
   transition: 0.5s;
 }
-picture{
+picture {
   width: 100%;
   height: 70%;
   padding: 20px;
@@ -81,62 +80,79 @@ picture{
   overflow: hidden;
   margin-bottom: 20px;
 }
-picture img{
+picture img {
   width: 100%;
 }
 .detail,
-		.button_container{
-			width: 90%;
-			/*background: red;*/
-			margin: auto;
-			padding: 5px;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			height: 50px;
-			font-size: 20px;
-			color: #444;
-		}
-		small{color: #555;}
-		.a_container{
-			text-decoration: none;
-			padding: 6px 14px;
-		    font-size: 15px;
-		    margin: 5px 0 0 20px;
-		    display: inline-block;
-		    background: #6773ff;
-		    color: white;
-		}
-    p.star{
-			margin: 5px auto;
-		    width: 65%;
-		    font-size: 25px;
-		    color: #808080;
-		}
-		@media (max-width: 768px) {
-			.text h1{
-				font-size: 35px;
-			}
-			.text p{
-				width: 90%;
-			}
-			header h1{
-				font-size: 25px;
-			}
-			header p span{
-				font-size: 30px;
-			}
-			section .product {
-				min-width: 49%;
-				margin:  0 10px  0 0;
-			}
-			.detail, .button{
-				font-size: 16px;
-			}
-			a{
-				padding: 6px 10px;
-			}
-		}
+.button_container {
+  width: 90%;
+  /*background: red;*/
+  margin: auto;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 50px;
+  font-size: 20px;
+  color: #444;
+}
+small {
+  color: #555;
+}
+.a_container {
+  text-decoration: none;
+  padding: 6px 14px;
+  font-size: 15px;
+  margin: 50px 0 0 40px;
+  display: inline-block;
+  background: #6773ff;
+  color: white;
+  border-radius: 8px;
+}
+.preco_antigo{
+  text-decoration: line-through;
+  text-decoration-thickness: 1px; 
+  font-size: 15px;
+  margin-top: 10px;
+}
+.preco_novo{
+  color: #b17704;
+  font-weight: 800;
+}
+
+p.star {
+  margin: 5px auto;
+  width: 65%;
+  font-size: 25px;
+  color: #808080;
+}
+@media (max-width: 768px) {
+  .text h1 {
+    font-size: 35px;
+  }
+  .text p {
+    width: 90%;
+  }
+  header h1 {
+    font-size: 25px;
+  }
+  header p span {
+    font-size: 30px;
+  }
+  section .product {
+    min-width: 49%;
+    margin: 0 10px 0 0;
+  }
+  .detail,
+  .button {
+    font-size: 16px;
+  }
+  a {
+    padding: 6px 10px;
+  }
+}
+
 /*-FIM SLIDER--*/
 .header {
   padding: 15px 0;
@@ -407,7 +423,7 @@ picture img{
   }
   .footer {
     margin-bottom: 50px;
-}
+  }
 }
 @media (max-width: 576px) {
   .slide-title {

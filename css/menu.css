@@ -74,30 +74,26 @@
 
 .nav__name {
   font-size: var(--tiny-font-size);
-  font-weight: normal;  
+  font-weight: normal;
   /* display: none;*/
   /* Minimalist design, hidden labels */
 }
-.nav__icon:not(.keep-icon) {
-  display: none;
-}
-.submenu {  
+
+.submenu {
   display: none;
   position: absolute;
   top: 100%;
   left: 1;
-  color: black; 
-  
+  color: black;
 }
 
-.img__menu{
+.img__menu {
   background-color: white;
   width: 20%;
 }
 
 .nav__item:hover .submenu {
   display: block;
-
 }
 /*Active link*/
 
@@ -116,7 +112,9 @@
 .scroll-header {
   box-shadow: 0 1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
 }
-
+.nav__icon:not(.keep-icon) {
+  display: none;
+}
 /*=============== MEDIA QUERIES ===============*/
 /* For small devices */
 /* Remove if you choose, the minimalist design */
@@ -169,7 +167,11 @@
     display: block;
   }
 }
-
+@media screen and (max-width: 767px) {
+  .nav__icon:not(.keep-icon) {
+    display: block;
+  }
+}
 @media screen and (min-width: 767px) {
   body {
     margin: 0;
