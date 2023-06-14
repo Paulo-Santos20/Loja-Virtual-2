@@ -279,6 +279,7 @@ body {
   .footer {
     margin-bottom: 50px;
 }
+}
 @media (max-width: 576px) {
   .slide-title {
     font-size: 36px;

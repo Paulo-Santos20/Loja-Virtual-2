@@ -79,9 +79,8 @@
     /* Minimalist design, hidden labels */
   }
   
-  .nav__icon {
+  .nav__icon:not(.keep-icon) {
     display: none;
-    font-size: 1.5rem;
   }
   
   /*Active link*/
