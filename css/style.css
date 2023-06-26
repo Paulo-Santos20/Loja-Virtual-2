@@ -52,7 +52,6 @@ main .cabecalho {
 section {
   width: 100%;
   height: 600px;
-  /*background: red;*/
   margin: auto;
   display: flex;
   align-items: center;
@@ -63,7 +62,7 @@ section::-webkit-scrollbar {
 }
 section .product {
   min-width: 24%;
-  height: 90%;
+  height: 100%;
   background: whitesmoke;
   margin: 0 20px 0 0;
   border-radius: 20px;
@@ -88,23 +87,24 @@ picture img {
   width: 90%;
   /*background: red;*/
   margin: auto;
-  padding: 5px;
+  padding: 45px;
   display: flex;
+  text-align: center;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   height: 50px;
   font-size: 20px;
   color: #444;
 }
-small {
-  color: #555;
+small {  
+  color: #c08516;
 }
 .a_container {
+  display: flex;
   text-decoration: none;
   padding: 6px 14px;
   font-size: 15px;
-  margin: 60px 0 0 35px;
   display: inline-block;
   background: #b39354;
   color: white;
@@ -389,3 +389,5 @@ small {
     background-position: right top;
   }
 }
+
+

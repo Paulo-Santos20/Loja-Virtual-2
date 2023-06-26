@@ -44,7 +44,7 @@
 
 .nav__logo {
   color: var(--title-color);
-  font-weight: 600;
+  
 }
 .carrinho {
   position: absolute;
@@ -74,39 +74,16 @@
 
 .nav__name {
   font-size: var(--tiny-font-size);
-  font-weight: normal;
+  
+  font-weight: 700;
   /* display: none;*/
   /* Minimalist design, hidden labels */
-}
-
-.submenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 1;
-  color: black;
 }
 
 .img__menu {
   background-color: white;
   width: 20%;
 }
-
-.nav__item:hover .submenu {
-  display: block;
-}
-/*Active link*/
-
-/* Minimalist design, active link */
-/* .active-link::before{
-      content: '';
-      position: absolute;
-      bottom: -.5rem;
-      width: 4px;
-      height: 4px;
-      background-color: var(--first-color);
-      border-radius: 50%;
-    } */
 
 /* Change background header */
 .scroll-header {
@@ -116,8 +93,6 @@
   display: none;
 }
 /*=============== MEDIA QUERIES ===============*/
-/* For small devices */
-/* Remove if you choose, the minimalist design */
 
 @media screen and (max-width: 320px) {
   .nav__name {
@@ -163,15 +138,11 @@
   .mvv {
     width: 95%;
   }
-  .nav__icon {
-    display: block;
-  }
-}
-@media screen and (max-width: 767px) {
   .nav__icon:not(.keep-icon) {
     display: block;
   }
 }
+
 @media screen and (min-width: 767px) {
   body {
     margin: 0;
