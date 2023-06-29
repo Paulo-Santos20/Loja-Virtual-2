@@ -1,8 +1,13 @@
+:root {
+  --cor-primaria: #b38b59;
+  --cor-secundaria: #113e21;
+  --cor-destaque: #f0f0f0;
+  --cor-subdestaque: #fefefe;
+}
 /*--Slider*/
 main {
-  width: 83%;
-  height: 640px;
-  /*background: red;*/
+  width: 90%;
+  height: 750px;
   margin: 0px auto;
   position: relative;
   padding: 5px 0;
@@ -10,23 +15,14 @@ main {
 main .text {
   padding: 10px;
   text-align: center;
-  /*font-size: 30px;*/
-  color: #554;
 }
 .text h1 {
   font-size: 50px;
 }
-.text p {
-  width: 60%;
-  padding: 5px;
-  margin: auto;
-  line-height: 30px;
-}
 main .cabecalho {
   width: 100%;
-  height: 10px;
+  height: 15px;
   margin: 0 auto;
-  /*background: gray;*/
   display: flex;
   align-items: center;
   padding: 20px;
@@ -37,7 +33,7 @@ main .cabecalho {
   font-size: 40px;
   margin: 0 5px;
   cursor: pointer;
-  color: #555;
+  color: black;
   width: 30px;
   height: 30px;
   display: inline-block;
@@ -46,12 +42,12 @@ main .cabecalho {
   border-radius: 3px;
 }
 .cabecalho p span_container:hover {
-  background: #b39354;
-  color: white;
+  background: var(--cor-primaria);
+  color: var(--cor-subdestaque);
 }
 section {
   width: 100%;
-  height: 600px;
+  height: 700px;
   margin: auto;
   display: flex;
   align-items: center;
@@ -63,18 +59,17 @@ section::-webkit-scrollbar {
 section .product {
   min-width: 24%;
   height: 100%;
-  background: whitesmoke;
-  margin: 0 20px 0 0;
-  border-radius: 20px;
+  background: var(--cor-destaque);
+  margin: 0px 15px 0px 10px;
+  border-radius: 10px 10px;
   position: relative;
   left: 0;
   transition: 0.5s;
 }
 picture {
   width: 100%;
-  height: 70%;
+  height: 80%;
   padding: 10px;
-  /*background: green;*/
   display: flex;
   overflow: hidden;
   margin-bottom: 6px;
@@ -82,26 +77,24 @@ picture {
 picture img {
   width: 100%;
 }
+.detail {
+  margin-top: 20px;
+}
 .detail,
 .button_container {
-  width: 90%;
-  /*background: red;*/
-  margin: auto;
-  padding: 45px;
+  width: 100%;
   display: flex;
-  text-align: center;
   flex-direction: column;
+  text-align: center;
   justify-content: center;
   align-items: center;
-  height: 50px;
+  height: 45px;
   font-size: 20px;
-  color: #444;
 }
-small {  
-  color: #c08516;
+small {
+  color: var(--cor-primaria);
 }
 .a_container {
-  display: flex;
   text-decoration: none;
   padding: 6px 14px;
   font-size: 15px;
@@ -109,20 +102,25 @@ small {
   background: #b39354;
   color: white;
   border-radius: 8px;
+  margin-top: 50px;
 }
-.preco_antigo{
+.preco_antigo {
   text-decoration: line-through;
-  text-decoration-thickness: 1px; 
+  text-decoration-thickness: 1px;
   font-size: 15px;
   margin-top: 10px;
 }
-.preco_novo{
+.preco_novo {
   color: #b17704;
   font-weight: 900;
   line-height: 30px;
 }
 
 @media (max-width: 768px) {
+  main {    
+  width: 100%;
+  height: 750px;
+  }
   .text h1 {
     font-size: 35px;
   }
@@ -137,12 +135,13 @@ small {
   }
   section .product {
     min-width: 49%;
+    height: 95%;
     margin: 0 10px 0 0;
   }
   .detail,
   .button {
-    font-size: 16px;
-  }  
+    font-size: 15px;
+  }
 }
 
 /*-FIM SLIDER--*/
@@ -191,7 +190,6 @@ small {
 .button--shop {
   padding: 10px 25px;
 }
-
 
 .label {
   display: inline-block;
@@ -368,17 +366,17 @@ small {
   }
 }
 @media (max-width: 576px) {
-  main{
+  main {
     width: 100%;
     height: 450px;
   }
   section {
-    height:450px;
+    height: 450px;
   }
   .a_container {
     font-size: 12px;
-    margin: 40px 0px 0px 5px;    
-  padding: 4px 18px;
+    margin: 40px 0px 0px 5px;
+    padding: 4px 18px;
   }
   .card {
     background-position: left top;
@@ -388,6 +386,11 @@ small {
   .card-4 {
     background-position: right top;
   }
+  .detail,
+  .button_container   {
+    font-size: 12px;
+    margin: 0;    
+  height: 0;
+  margin-top: 32px;
+  }
 }
-
-
