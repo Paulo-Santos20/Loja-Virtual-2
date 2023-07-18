@@ -4,13 +4,119 @@
   --cor-destaque: #f0f0f0;
   --cor-subdestaque: #fefefe;
 }
+
+/*--Cart--*/
+#cart-icon{
+  position: relative;  
+  left:550px; /* Distância em relação à parte direita da página */
+  font-size: 30px;
+  box-shadow: 0 0 10px #b38b59;
+  border-radius: 10%; /* Adiciona um raio de borda para tornar o ícone circular */
+  display: inline-block; /* Certifica-se de que a sombra se ajuste ao ícone */
+  padding: 5px;
+  cursor: pointer;
+}
+#cart-icon[data-quantitiy]::after{
+  contain: '';
+}
+#cart-icon[data-quantitiy]::after{
+content: '';
+position: absolute;
+top: 0;
+right: -12px;
+width: 20px;
+height: 20px;
+background-color: var(--cor-secundaria);
+border-radius: 50%;
+color: white;
+font-size: 12px;
+font-weight: 500;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+/*-- Cart --*/
+.cart{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 360px;
+  min-height: 100vh;
+  padding: 20px;
+  background: var(--cor-destaque);
+  box-shadow: -2px 0 4px hsl(0, 4%, 15% / 10%);
+  transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.cart-title{
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 32px;
+}
+.total{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--cor-primaria);
+}
+.total-title{
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1rem ;
+}
+.total-price{
+  font-size: 1.075rem;
+  margin: 1rem 0 0 0.7rem;
+}
+.btn-buy{
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem auto 0 auto;
+  padding: 12px 20px;
+  width: 50%;
+  text-align: center;
+  border: none;
+  border-radius: 2rem;
+  background-color: #b17704;
+  color: #113e21;
+  font: 1rem;
+  font-style: italic;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#close-cart{
+position: absolute;
+top: 1rem;
+right: 0.8rem;
+font-size: 2rem;
+color: #b17704;
+cursor: pointer;
+}
+
+.cart-box{
+  display: grid;
+  grid-template-columns: 32% 50% 18%;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.cart-img{
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  object-position: center;
+  padding: 10px;
+}
+.detail-box
+
 /*--Slider*/
 main {
   width: 90%;
   height: 750px;
   margin: 0px auto;
   position: relative;
-  padding: 5px 0;
+  padding: 25px 0;
 }
 main .text {
   padding: 10px;

@@ -1,462 +1,552 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veneza Shopping</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto+Slab:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/menu.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <script>
+      document.documentElement.className = "js";
+    </script>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <img
+          src="img/logo-roupa.jpg"
+          style="
+            width: 8%;
+            position: absolute;
+            left: 0;
+            border-radius: 5px;
+            margin-left: 40px;
+            margin-top: 20px;
+          "
+          alt=""
+          class="nav_img"
+        />
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link active-link">
+                <i class="bx bx-female nav__icon"></i>
+                <span class="nav__name">Mulheres</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="Institucional.html" class="nav__link">
+                <i class="bx bx-male nav__icon"></i>
+                <span class="nav__name">Homens</span>
+              </a>
+            </li>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Veneza Shopping</title>
-	<link rel="preconnect" href="https://fonts.gstatic.com" />
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto+Slab:wght@700&display=swap"
-		rel="stylesheet" />
-	<link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-	<link rel="stylesheet" href="/css/menu.css">
-	<link rel="stylesheet" href="./css/style.css" />
-	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-	<script>document.documentElement.className = 'js';</script>
-</head>
-<body>
-<header class="header" id="header">
-	<nav class="nav container">
-		<img src="img/logo-roupa.jpg"
-			style="width:12%;position: absolute; left: 0; border-radius:6px; margin-left: 40px;" alt="" class="nav_img">
-		<div class="nav__menu" id="nav-menu">
-			<ul class="nav__list">
-				<li class="nav__item">
-					<a href="index.html" class="nav__link active-link">
-						<i class='bx bx-female nav__icon'></i>
-						<span class="nav__name">Mulheres</span>
-					</a>
-				</li>
-				<li class="nav__item">
-					<a href="Institucional.html" class="nav__link">
-						<i class='bx bx-male nav__icon'></i>
-						<span class="nav__name">Homens</span>
-					</a>
-				</li>
+            <li class="nav__item">
+              <a href="Unidades.html" class="nav__link">
+                <i class="fa-regular fa-gem nav__icon"></i>
+                <span class="nav__name">Acessórios</span>
+              </a>
+            </li>
 
-				<li class="nav__item">
-					<a href="Unidades.html" class="nav__link">
-						<i class="fa-regular fa-gem nav__icon"></i>
-						<span class="nav__name">Acessórios</span>
-					</a>
-				</li>
-
-				<li class="nav__item">
-					<a href="Transparencia.html" class="nav__link">
-						<i class="fa-solid fa-users-between-lines nav__icon"></i>
-						<span class="nav__name">Novidades</span>
-					</a>
-				</li>
-				<li class="nav__item">
-					<a href="Oportunidades.html" class="nav__link">
-						<i class='bx bx-group nav__icon'></i>
-						<span class="nav__name">Contatos</span>
-					</a>
-				</li>
-			</ul>
+            <li class="nav__item">
+              <a href="Transparencia.html" class="nav__link">
+                <i class="fa-solid fa-users-between-lines nav__icon"></i>
+                <span class="nav__name">Novidades</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="Oportunidades.html" class="nav__link">
+                <i class="bx bx-group nav__icon"></i>
+                <span class="nav__name">Contatos</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Cart Icon-->
+        <i
+          class="bx bx-shopping-bag"
+          alt="Ícone do carrinho de compras"
+          id="cart-icon"
+          data-quantitiy="0"
+        ></i>
+        <!-- Cart-->
+		<div class="cart">
+			<h2 class="cart-title">Seu carrinho</h2>
+			<!-- Content -->
+			<div class="cart-content">
+				<div class="cart-box">
+					<img src="/img/calca_preta.png" alt="" class="cart-img">
+					<div class="detail-box">
+						<div class="cart-product-title">Camisa</div>
+						<div class="cart-price">$50</div>
+						<input type="number" name="" id="" value="1" class="cart-quantitiy">
+					</div>
+					<!-- Remove Item -->
+					<i class='bx bx-trash-alt cart-remove'></i>
+				</div>
+			</div>
+			<!-- Total -->
+			<div class="total">
+				<div class="total-title">Total</div>
+				<div class="total-price">$0</div>
+			</div>
+			<!-- Comprar Itens -->
+			<button type="button" class="btn-buy">Pagar agora</button>
+			<!-- Close Cart -->
+			<i class='bx bx-x' id="close-cart"></i>
 		</div>
-		<a href="#" class="button carrinho">
-			<img class="button-icon" src="./img/cart.svg" alt="icon: cart" />
-			<span class="button-text">Carrinho</span>
-		</a>
-		<!-- LOGO COMO PERFIL
-				<img src="img/Logo CHS.png" alt="" class="nav__img">
-				-->
-	</nav>
-	<!-- /.row -->
-</header>
-	<main>		
-		<div class="cabecalho" id="cabecalho">
-			<h2 class="section-title">Mais vendidos</h2>
-			<p>
-				<span_container>&#139;</span_container>
-				<span_container>&#155;</span_container>
-			</p>
-		</div>
-		<section>
-			<div class="product">
-				<picture>
-					<img src="img/calca_preta.png" alt="">
-				</picture>
-				<div class="detail">
-					<p>
-						<b>Calça Preta</b><br>
-						<a href=""><small>Calças</small></a>
-					</p>
-					<samp class="preco_antigo">De: R$ 65,00</samp>
-					<samp class="preco_novo">Por: R$ 45,00</samp>
-				</div>
-				<div class="button_container">					
-					<a href="#"class="a_container">Adicionar ao carrinho</a>
-				</div>
-			</div>
-			<div class="product">
-				<picture>
-					<img src="img/short_preto.png" alt="">
-				</picture>
-				<div class="detail">
-					<p>
-						<b>Short Preto</b><br>
-						<a href=""><small>Shorts</small></a>
-					</p>
-					<samp class="preco_antigo">De: R$ 65,00</samp>
-					<samp class="preco_novo">Por: R$ 45,00</samp>
-				</div>
-				<div class="button_container">					
-					<a href="#" class="a_container">Adicionar ao carrinho</a>
-				</div>
-			</div>
-			<div class="product">
-				<picture>
-					<img src="img/short_azul.png" alt="">
-				</picture>
-				<div class="detail">
-					<p>
-						<b>Short Azul Escuro</b><br>
-						<a href=""><small>Shorts</small></a>
-					</p>
-					<samp class="preco_antigo">De: R$ 65,00</samp>
-					<samp class="preco_novo">Por: R$ 45,00</samp>
-				</div>
-				<div class="button_container">					
-					<a href="#"class="a_container">Adicionar ao carrinho</a>
-				</div>
-			</div>
-			<div class="product">
-				<picture>
-					<img src="img/banner4.png" alt="">
-				</picture>
-				<div class="detail">
-					<p>
-						<b>Smart Watch</b><br>
-						<a href=""><small>Acessórios</small></a>
-					</p>
-					<samp class="preco_antigo">De: R$ 250,00</samp>
-					<samp class="preco_novo">Por: R$ 199,00</samp>
-				</div>
-				<div class="button_container">					
-					<a href="#"class="a_container">Adicionar ao carrinho</a>
-				</div>
-			</div>
-			<div class="product">
-				<picture>
-					<img src="img/watch.png" alt="">
-				</picture>
-				<div class="detail">
-					<p>
-						<b>Relógio de Ouro</b><br>
-						<a href=""><small>Acessórios</small></a>
-					</p>
-					<samp class="preco_antigo">De: R$ 324,99</samp>
-					<samp class="preco_novo">Por: R$ 299,99</samp>
-				</div>
-				<div class="button_container">					
-					<a href="#"class="a_container">Adicionar ao carrinho</a>
-				</div>
-			</div>
-			<div class="product">
-				<picture>
-					<img src="img/delta.png" alt="">
-				</picture>
-				<div class="detail">
-					<p>
-						<b>Botas Cano Longo</b><br>
-						<a href=""><small>Calçados</small></a>
-					</p>
-					<samp class="preco_antigo">De: R$ 65,00</samp>
-					<samp class="preco_novo">Por: R$ 45,00</samp>
-				</div>
-				<div class="button_container">					
-					<a href="#"class="a_container">Adicionar ao carrinho</a>
-				</div>
-			</div>
-			<div class="product">
-				<picture>
-					<img src="img/image3.png" alt="">
-				</picture>
-				<div class="detail">
-					<p>
-						<b>Sapato Alongado</b><br>
-						<a href=""><small>Calçados</small></a>
-					</p>
-					<samp class="preco_antigo">De: R$ 65,00</samp>
-					<samp class="preco_novo">Por: R$ 45,00</samp>
-				</div>
-				<div class="button_container">					
-					<a href="#"class="a_container">Adicionar ao carrinho</a>
-				</div>
-			</div>
-			<div class="product">
-				<picture>
-					<img src="img/image2.png" alt="">
-				</picture>
-				<div class="detail">
-					<p>
-						<b>Salto alto</b><br>
-						<a href=""><small>Calçados</small></a>
-					</p>
-					<samp class="preco_antigo">De: R$ 65,00</samp>
-					<samp class="preco_novo">Por: R$ 45,00</samp>
-				</div>
-				<div class="button_container">					
-					<a href="#"class="a_container">Adicionar ao carrinho</a>
-				</div>
-			</div>
-			<div class="product">
-				<picture>
-					<img src="img/nokia.png" alt="">
-				</picture>
-				<div class="detail">
-					<p>
-						<b>Telefone Nokia</b><br>
-						<a href=""><small>Dispositivos</small></a>
-					</p>
-					<samp class="preco_antigo">De: R$ 65,00</samp>
-					<samp class="preco_novo">Por: R$ 45,00</samp>
-				</div>
-				<div class="button_container">					
-					<a href="#"class="a_container">Adicionar ao carrinho</a>
-				</div>
-			</div>
-			<div class="product">
-				<picture>
-					<img src="img/nokia-air.png" alt="">
-				</picture>
-				<div class="detail">
-					<p>
-						<b>Fones Bluetooth</b><br>
-						<a href=""><small>Acessórios</small></a>
-					</p>
-					<samp class="preco_antigo">De: R$ 65,00</samp>
-					<samp class="preco_novo">Por: R$ 45,00</samp>
-				</div>
-				<div class="button_container">					
-					<a href="#"class="a_container">Adicionar ao carrinho</a>
-				</div>
-			</div>
-			<div class="product">
-				<picture>
-					<img src="img/feature_3.png" alt="">
-				</picture>
-				<div class="detail">
-					<p>
-						<b>Saptos casual</b><br>
-						<a href=""><small>Calçados</small></a>
-					</p>
-					<samp class="preco_antigo">De: R$ 65,00</samp>
-					<samp class="preco_novo">Por: R$ 45,00</samp>
-				</div>
-				<div class="button_container">					
-					<a href="#"class="a_container">Adicionar ao carrinho</a>
-				</div>
-			</div>
-			<div class="product">
-				<picture>
-					<img src="img/one.png" alt="">
-				</picture>
-				<div class="detail">
-					<p>
-						<b>product Twelve</b><br>
-						<small>Novo Produto</small>
-					</p>
-					<samp>R$ 45.00</samp>
-				</div>
-				<div class="button_container">
-					<a href="#"class="a_container">Adicionar ao carrinho</a>
-				</div>
-			</div>
-		</section>
-	</main>
-	<div class="container pt-5 pb-4">
-		<div class="row mb-4">
-			<div class="col-xl-6">
-				<div class="card card-1 mb-4">
-					<h3 class="card-title">
-						Camisas, blusas e moletons
-					</h3>
-					<p class="card-text">
-					</p>
-					<a href="/produtos/camisa.html" class="button">
-						<span class="button-text">Confira</span>
-						<img src="./img/arrow.svg" alt="icon: arrow" class="button-icon" />
-					</a>
-				</div>
-				<!-- /.card -->
-			</div>
+      </nav>
+      <!-- /.row -->
+    </header>
+    <main>
+      <div class="cabecalho" id="cabecalho">
+        <h2 class="section-title">Mais vendidos</h2>
+        <p>
+          <span_container>&#139;</span_container>
+          <span_container>&#155;</span_container>
+        </p>
+      </div>
+      <section>
+        <div class="product">
+          <picture>
+            <img src="img/calca_preta.png" alt="" />
+          </picture>
+          <div class="detail">
+            <p>
+              <b>Calça Preta</b><br />
+              <a href=""><small>Calças</small></a>
+            </p>
+            <samp class="preco_antigo">De: R$ 65,00</samp>
+            <samp class="preco_novo">Por: R$ 45,00</samp>
+          </div>
+          <div class="button_container">
+            <a href="#" class="a_container">Adicionar ao carrinho</a>
+          </div>
+        </div>
+        <div class="product">
+          <picture>
+            <img src="img/short_preto.png" alt="" />
+          </picture>
+          <div class="detail">
+            <p>
+              <b>Short Preto</b><br />
+              <a href=""><small>Shorts</small></a>
+            </p>
+            <samp class="preco_antigo">De: R$ 65,00</samp>
+            <samp class="preco_novo">Por: R$ 45,00</samp>
+          </div>
+          <div class="button_container">
+            <a href="#" class="a_container">Adicionar ao carrinho</a>
+          </div>
+        </div>
+        <div class="product">
+          <picture>
+            <img src="img/short_azul.png" alt="" />
+          </picture>
+          <div class="detail">
+            <p>
+              <b>Short Azul Escuro</b><br />
+              <a href=""><small>Shorts</small></a>
+            </p>
+            <samp class="preco_antigo">De: R$ 65,00</samp>
+            <samp class="preco_novo">Por: R$ 45,00</samp>
+          </div>
+          <div class="button_container">
+            <a href="#" class="a_container">Adicionar ao carrinho</a>
+          </div>
+        </div>
+        <div class="product">
+          <picture>
+            <img src="img/banner4.png" alt="" />
+          </picture>
+          <div class="detail">
+            <p>
+              <b>Smart Watch</b><br />
+              <a href=""><small>Acessórios</small></a>
+            </p>
+            <samp class="preco_antigo">De: R$ 250,00</samp>
+            <samp class="preco_novo">Por: R$ 199,00</samp>
+          </div>
+          <div class="button_container">
+            <a href="#" class="a_container">Adicionar ao carrinho</a>
+          </div>
+        </div>
+        <div class="product">
+          <picture>
+            <img src="img/watch.png" alt="" />
+          </picture>
+          <div class="detail">
+            <p>
+              <b>Relógio de Ouro</b><br />
+              <a href=""><small>Acessórios</small></a>
+            </p>
+            <samp class="preco_antigo">De: R$ 324,99</samp>
+            <samp class="preco_novo">Por: R$ 299,99</samp>
+          </div>
+          <div class="button_container">
+            <a href="#" class="a_container">Adicionar ao carrinho</a>
+          </div>
+        </div>
+        <div class="product">
+          <picture>
+            <img src="img/delta.png" alt="" />
+          </picture>
+          <div class="detail">
+            <p>
+              <b>Botas Cano Longo</b><br />
+              <a href=""><small>Calçados</small></a>
+            </p>
+            <samp class="preco_antigo">De: R$ 65,00</samp>
+            <samp class="preco_novo">Por: R$ 45,00</samp>
+          </div>
+          <div class="button_container">
+            <a href="#" class="a_container">Adicionar ao carrinho</a>
+          </div>
+        </div>
+        <div class="product">
+          <picture>
+            <img src="img/image3.png" alt="" />
+          </picture>
+          <div class="detail">
+            <p>
+              <b>Sapato Alongado</b><br />
+              <a href=""><small>Calçados</small></a>
+            </p>
+            <samp class="preco_antigo">De: R$ 65,00</samp>
+            <samp class="preco_novo">Por: R$ 45,00</samp>
+          </div>
+          <div class="button_container">
+            <a href="#" class="a_container">Adicionar ao carrinho</a>
+          </div>
+        </div>
+        <div class="product">
+          <picture>
+            <img src="img/image2.png" alt="" />
+          </picture>
+          <div class="detail">
+            <p>
+              <b>Salto alto</b><br />
+              <a href=""><small>Calçados</small></a>
+            </p>
+            <samp class="preco_antigo">De: R$ 65,00</samp>
+            <samp class="preco_novo">Por: R$ 45,00</samp>
+          </div>
+          <div class="button_container">
+            <a href="#" class="a_container">Adicionar ao carrinho</a>
+          </div>
+        </div>
+        <div class="product">
+          <picture>
+            <img src="img/nokia.png" alt="" />
+          </picture>
+          <div class="detail">
+            <p>
+              <b>Telefone Nokia</b><br />
+              <a href=""><small>Dispositivos</small></a>
+            </p>
+            <samp class="preco_antigo">De: R$ 65,00</samp>
+            <samp class="preco_novo">Por: R$ 45,00</samp>
+          </div>
+          <div class="button_container">
+            <a href="#" class="a_container">Adicionar ao carrinho</a>
+          </div>
+        </div>
+        <div class="product">
+          <picture>
+            <img src="img/nokia-air.png" alt="" />
+          </picture>
+          <div class="detail">
+            <p>
+              <b>Fones Bluetooth</b><br />
+              <a href=""><small>Acessórios</small></a>
+            </p>
+            <samp class="preco_antigo">De: R$ 65,00</samp>
+            <samp class="preco_novo">Por: R$ 45,00</samp>
+          </div>
+          <div class="button_container">
+            <a href="#" class="a_container">Adicionar ao carrinho</a>
+          </div>
+        </div>
+        <div class="product">
+          <picture>
+            <img src="img/feature_3.png" alt="" />
+          </picture>
+          <div class="detail">
+            <p>
+              <b>Saptos casual</b><br />
+              <a href=""><small>Calçados</small></a>
+            </p>
+            <samp class="preco_antigo">De: R$ 65,00</samp>
+            <samp class="preco_novo">Por: R$ 45,00</samp>
+          </div>
+          <div class="button_container">
+            <a href="#" class="a_container">Adicionar ao carrinho</a>
+          </div>
+        </div>
+        <div class="product">
+          <picture>
+            <img src="img/one.png" alt="" />
+          </picture>
+          <div class="detail">
+            <p>
+              <b>product Twelve</b><br />
+              <small>Novo Produto</small>
+            </p>
+            <samp>R$ 45.00</samp>
+          </div>
+          <div class="button_container">
+            <a href="#" class="a_container">Adicionar ao carrinho</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="container pt-5 pb-4">
+      <div class="row mb-4">
+        <div class="col-xl-6">
+          <div class="card card-1 mb-4">
+            <h3 class="card-title">Camisas, blusas e moletons</h3>
+            <p class="card-text"></p>
+            <a href="/produtos/camisa.html" class="button">
+              <span class="button-text">Confira</span>
+              <img
+                src="./img/arrow.svg"
+                alt="icon: arrow"
+                class="button-icon"
+              />
+            </a>
+          </div>
+          <!-- /.card -->
+        </div>
 
-			<!-- /.col-6 -->
-			<div class="col-xl-6">
-				<div class="card card-2 mb-4">
-					<h3 class="card-title text-light">
-						Calças, Shorts e Bermudas
-					</h3>
-					<p class="card-text text-light">
-					</p>
-					<a href="/produtos/calca.html" class="button">
-						<span class="button-text">Confira</span>
-						<img src="./img/arrow.svg" alt="icon: arrow" class="button-icon" />
-					</a>
-				</div>
-				<!-- /.card -->
-			</div>
-			<!-- /.col-6 -->
-			<div class="col-xl-9 col-lg-6">
-				<div class="card card-3 mb-4">
-					<span class="label">Mais vendidos</span>
-					<h3 class="card-title large">
-						Looks completo<br />
-					</h3>
-					<p class="card-text large">
-						Para você que gosta de se vestir bem
-					</p>
-					<a href="/produtos/look_completo.html" class="button">
-						<span class="button-text">Confira</span>
-						<img src="./img/arrow.svg" alt="icon: arrow" class="button-icon" />
-					</a>
-				</div>
-				<!-- /.card -->
-			</div>
-			<!-- /.col-9 -->
-			<div class="col-xl-3 col-lg-6">
-				<div class="card card-4">
-					<h3 class="card-title text-light">
-						Acessórios mais vendidos
-					</h3>
-					<p class="card-text text-light">Óculos, Colares e Joias</p>
-					<a href="/produtos/acessorios.html" class="button">
-						<span class="button-text">Confira</span>
-						<img src="./img/arrow.svg" alt="icon: arrow" class="button-icon" />
-					</a>
-				</div>
-				<!-- /.card -->
-			</div>
-			<!-- /.col-3 -->
-		</div>
-		<!-- /.row -->
+        <!-- /.col-6 -->
+        <div class="col-xl-6">
+          <div class="card card-2 mb-4">
+            <h3 class="card-title text-light">Calças, Shorts e Bermudas</h3>
+            <p class="card-text text-light"></p>
+            <a href="/produtos/calca.html" class="button">
+              <span class="button-text">Confira</span>
+              <img
+                src="./img/arrow.svg"
+                alt="icon: arrow"
+                class="button-icon"
+              />
+            </a>
+          </div>
+          <!-- /.card -->
+        </div>
+        <!-- /.col-6 -->
+        <div class="col-xl-9 col-lg-6">
+          <div class="card card-3 mb-4">
+            <span class="label">Mais vendidos</span>
+            <h3 class="card-title large">Looks completo<br /></h3>
+            <p class="card-text large">Para você que gosta de se vestir bem</p>
+            <a href="/produtos/look_completo.html" class="button">
+              <span class="button-text">Confira</span>
+              <img
+                src="./img/arrow.svg"
+                alt="icon: arrow"
+                class="button-icon"
+              />
+            </a>
+          </div>
+          <!-- /.card -->
+        </div>
+        <!-- /.col-9 -->
+        <div class="col-xl-3 col-lg-6">
+          <div class="card card-4">
+            <h3 class="card-title text-light">Acessórios mais vendidos</h3>
+            <p class="card-text text-light">Óculos, Colares e Joias</p>
+            <a href="/produtos/acessorios.html" class="button">
+              <span class="button-text">Confira</span>
+              <img
+                src="./img/arrow.svg"
+                alt="icon: arrow"
+                class="button-icon"
+              />
+            </a>
+          </div>
+          <!-- /.card -->
+        </div>
+        <!-- /.col-3 -->
+      </div>
+      <!-- /.row -->
 
-		<div class="row align-items-center mb-4" id="novidades">
-			<div class="col-9">
-				<h2 class="section-title">Novos Produtos</h2>
-			</div>
-			<!-- /.col-9 -->
-			<div class="col-3 d-flex justify-content-end">
-				<a href="#" class="more">Confira</a>
-			</div>
-			<!-- /.col-3 -->
-		</div>
-				<!-- /.row -->		
-		<div class="row">
-			<div class="col-lg-3 col-sm-6">
-				<a href="#" class="goods-card">
-					<span class="label">Novos</span>
-					<!-- /.label -->
-					<img src="./img/calca_preta.png" alt="img: Hoodie" class="goods-img" />
-					<h3 class="goods-title">Calça Preta Slim</h3>
-					<!-- /.goods-title -->
-					<p class="goods-description">
-						Preta
-					</p>
-					<!-- /.goods-description -->
-					<span class="preco_novo">R$ 45</span>
-					<!-- /.preco_novo -->
-				</a>
-				<!-- /.goods-card -->
-			</div>
-			<!-- /.col-3 -->
+      <div class="row align-items-center mb-4" id="novidades">
+        <div class="col-9">
+          <h2 class="section-title">Novos Produtos</h2>
+        </div>
+        <!-- /.col-9 -->
+        <div class="col-3 d-flex justify-content-end">
+          <a href="#" class="more">Confira</a>
+        </div>
+        <!-- /.col-3 -->
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-lg-3 col-sm-6">
+          <a href="#" class="goods-card">
+            <span class="label">Novos</span>
+            <!-- /.label -->
+            <img
+              src="./img/calca_preta.png"
+              alt="img: Hoodie"
+              class="goods-img"
+            />
+            <h3 class="goods-title">Calça Preta Slim</h3>
+            <!-- /.goods-title -->
+            <p class="goods-description">Preta</p>
+            <!-- /.goods-description -->
+            <span class="preco_novo">R$ 45</span>
+            <!-- /.preco_novo -->
+          </a>
+          <!-- /.goods-card -->
+        </div>
+        <!-- /.col-3 -->
 
-			<div class="col-lg-3 col-sm-6">
-				<a href="#" class="goods-card">
-					<span class="label">Novos</span>
-					<!-- /.label -->
-					<img src="./img/short_azul.png" alt="img: Faded Beach Trousers" class="goods-img" />
-					<h3 class="goods-title">Short Curto</h3>
-					<!-- /.goods-title -->
-					<p class="goods-description">Azul Escuro</p>
-					<!-- /.goods-description -->
-					<span class="preco_novo">R$ 45</span>
-					<!-- /.preco_novo -->
-				</a>
-				<!-- /.goods-card -->
-			</div>
-			<!-- /.col-3 -->
+        <div class="col-lg-3 col-sm-6">
+          <a href="#" class="goods-card">
+            <span class="label">Novos</span>
+            <!-- /.label -->
+            <img
+              src="./img/short_azul.png"
+              alt="img: Faded Beach Trousers"
+              class="goods-img"
+            />
+            <h3 class="goods-title">Short Curto</h3>
+            <!-- /.goods-title -->
+            <p class="goods-description">Azul Escuro</p>
+            <!-- /.goods-description -->
+            <span class="preco_novo">R$ 45</span>
+            <!-- /.preco_novo -->
+          </a>
+          <!-- /.goods-card -->
+        </div>
+        <!-- /.col-3 -->
 
-			<div class="col-lg-3 col-sm-6">
-				<a href="#" class="goods-card">
-					<span class="label">Novos</span>
-					<!-- /.label -->
-					<img src="./img/short_preto.png" alt="img: Text Camisa" class="goods-img" />
-					<h3 class="goods-title">Short Curto</h3>
-					<!-- /.goods-title -->
-					<p class="goods-description">Preto</p>
-					<!-- /.goods-description -->
-					<span class="preco_novo">R$ 45</span>
-					<!-- /.preco_novo -->
-				</a>
-				<!-- /.goods-card -->
-			</div>
-			<!-- /.col-3 -->
-	</div>
-	<!-- /.container -->
-	</div>
-	<footer class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-xl-7 mb-4 mb-xl-0">
-					<nav>
-						<ul class="footer-menu d-sm-flex">
-							<li class="footer-menu-item">
-								<a href="index.html" class="footer-menu-link">Loja</a>
-							</li>
-							<li class="footer-menu-item">
-								<a href="https://www.google.com.br/maps/place/R.+C,+185+-+%C3%81gua+Branca,+Vit%C3%B3ria+de+Santo+Ant%C3%A3o+-+PE/@-8.0984771,-35.2845447,3a,75y,1.89h,83.6t/data=!3m6!1e1!3m4!1shwTGwWquB86WU8nsctS8UQ!2e0!7i16384!8i8192!4m7!3m6!1s0x7abab46678966d3:0x494962314ac81bc!8m2!3d-8.0985729!4d-35.2848957!10e5!16s%2Fg%2F11c28_shlw?entry=ttu" class="footer-menu-link" target="_blank">Localização</a>
-							</li>
-							<li class="footer-menu-item">
-								<a href="#" class="footer-menu-link">Sobre Nós</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-				<!-- /.col-7 -->
-				<div class="col-lg-3 d-flex align-items-center">
-					<span class="footer-text">Nos siga</span>
-					<span class="footer-social d-inline-flex align-items-center">
-						<a href="https://wa.me/5581983345386?text=Ol%C3%A1%2C+tenho+interesse+em+comprar" class="social-link" target="_blank"><img src="./img/whatsapp.svg" alt="whatsapp" /></a>
-						<a href="#" class="social-link"><img src="./img/facebook.svg" alt="facebook" /></a>
-						<a href="#" class="social-link"><img src="./img/twitter.svg" alt="twitter" /></a>
-						<a href="#" class="social-link"><img src="./img/instagram.svg" alt="instagram" /></a>
-					</span>
-				</div>
-				<!-- /.col-7 -->
-				<div class="col-xl-2 col-lg-3 d-flex justify-content-lg-end mt-4 mt-lg-0">
-					<span class="footer-text">© 2023 Veneza Shopping</span>
-				</div>
-				<!-- /.col-2 -->
-			</div>
-			<!-- /.row -->
-			<hr class="footer-line mt-4 mb-4" />
-			<div class="row justify-content-between">
-				<div class="col-lg-4 col-sm-9 footer-payment">
-					<img class="payment-logo" src="./img/visa.png" alt="visa logo" />
-					<img class="payment-logo" src="./img/mastercard.png" alt="mastercard logo" />
-					<img class="payment-logo" src="./img/paypal.png" alt="paypal logo" />
-				</div>
-				<!-- /.col-4 -->
-				<div class="col-lg-2 col-sm-3 d-flex justify-content-end">
-					<a href="#" class="top-link d-flex align-items-center">
-						<span class="top-link-text">Top</span>
-						<img src="./img/top-arrow.svg" alt="icon: arrow top" />
-					</a>
-				</div>
-				<!-- /.col-2 -->
-			</div>
-			<!-- /.row -->
-		</div>
-		<!-- /.container -->
-	</footer>
-	<!-- /.footer -->
-	<script src="https://kit.fontawesome.com/b1048cf95c.js" crossorigin="anonymous"></script>	
-	<script src="/js/main.js"></script>
-	<script src="/js/produtos.js"></script>
-</body>
+        <div class="col-lg-3 col-sm-6">
+          <a href="#" class="goods-card">
+            <span class="label">Novos</span>
+            <!-- /.label -->
+            <img
+              src="./img/short_preto.png"
+              alt="img: Text Camisa"
+              class="goods-img"
+            />
+            <h3 class="goods-title">Short Curto</h3>
+            <!-- /.goods-title -->
+            <p class="goods-description">Preto</p>
+            <!-- /.goods-description -->
+            <span class="preco_novo">R$ 45</span>
+            <!-- /.preco_novo -->
+          </a>
+          <!-- /.goods-card -->
+        </div>
+        <!-- /.col-3 -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-7 mb-4 mb-xl-0">
+            <nav>
+              <ul class="footer-menu d-sm-flex">
+                <li class="footer-menu-item">
+                  <a href="index.html" class="footer-menu-link">Loja</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a
+                    href="https://www.google.com.br/maps/place/R.+C,+185+-+%C3%81gua+Branca,+Vit%C3%B3ria+de+Santo+Ant%C3%A3o+-+PE/@-8.0984771,-35.2845447,3a,75y,1.89h,83.6t/data=!3m6!1e1!3m4!1shwTGwWquB86WU8nsctS8UQ!2e0!7i16384!8i8192!4m7!3m6!1s0x7abab46678966d3:0x494962314ac81bc!8m2!3d-8.0985729!4d-35.2848957!10e5!16s%2Fg%2F11c28_shlw?entry=ttu"
+                    class="footer-menu-link"
+                    target="_blank"
+                    >Localização</a
+                  >
+                </li>
+                <li class="footer-menu-item">
+                  <a href="#" class="footer-menu-link">Sobre Nós</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- /.col-7 -->
+          <div class="col-lg-3 d-flex align-items-center">
+            <span class="footer-text">Nos siga</span>
+            <span class="footer-social d-inline-flex align-items-center">
+              <a
+                href="https://wa.me/5581983345386?text=Ol%C3%A1%2C+tenho+interesse+em+comprar"
+                class="social-link"
+                target="_blank"
+                ><img src="./img/whatsapp.svg" alt="whatsapp"
+              /></a>
+              <a href="#" class="social-link"
+                ><img src="./img/facebook.svg" alt="facebook"
+              /></a>
+              <a href="#" class="social-link"
+                ><img src="./img/twitter.svg" alt="twitter"
+              /></a>
+              <a href="#" class="social-link"
+                ><img src="./img/instagram.svg" alt="instagram"
+              /></a>
+            </span>
+          </div>
+          <!-- /.col-7 -->
+          <div
+            class="col-xl-2 col-lg-3 d-flex justify-content-lg-end mt-4 mt-lg-0"
+          >
+            <span class="footer-text">© 2023 Veneza Shopping</span>
+          </div>
+          <!-- /.col-2 -->
+        </div>
+        <!-- /.row -->
+        <hr class="footer-line mt-4 mb-4" />
+        <div class="row justify-content-between">
+          <div class="col-lg-4 col-sm-9 footer-payment">
+            <img class="payment-logo" src="./img/visa.png" alt="visa logo" />
+            <img
+              class="payment-logo"
+              src="./img/mastercard.png"
+              alt="mastercard logo"
+            />
+            <img
+              class="payment-logo"
+              src="./img/paypal.png"
+              alt="paypal logo"
+            />
+          </div>
+          <!-- /.col-4 -->
+          <div class="col-lg-2 col-sm-3 d-flex justify-content-end">
+            <a href="#" class="top-link d-flex align-items-center">
+              <span class="top-link-text">Top</span>
+              <img src="./img/top-arrow.svg" alt="icon: arrow top" />
+            </a>
+          </div>
+          <!-- /.col-2 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </footer>
+    <!-- /.footer -->
+    <script
+      src="https://kit.fontawesome.com/b1048cf95c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/produtos.js"></script>
+  </body>
 </html>
