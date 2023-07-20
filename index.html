@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="/css/menu.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" href="/css/slide.css" />
     <script>
       document.documentElement.className = "js";
     </script>
@@ -85,237 +86,107 @@
           data-quantitiy="0"
         ></i>
         <!-- Cart-->
-		<div class="cart">
-			<h2 class="cart-title">Seu carrinho</h2>
-			<!-- Content -->
-			<div class="cart-content">
-				<div class="cart-box">
-					<img src="/img/calca_preta.png" alt="" class="cart-img">
-					<div class="detail-box">
-						<div class="cart-product-title">Camisa</div>
-						<div class="cart-price">$50</div>
-						<input type="number" name="" id="" value="1" class="cart-quantitiy">
-					</div>
-					<!-- Remove Item -->
-					<i class='bx bx-trash-alt cart-remove'></i>
-				</div>
-			</div>
-			<!-- Total -->
-			<div class="total">
-				<div class="total-title">Total</div>
-				<div class="total-price">$0</div>
-			</div>
-			<!-- Comprar Itens -->
-			<button type="button" class="btn-buy">Pagar agora</button>
-			<!-- Close Cart -->
-			<i class='bx bx-x' id="close-cart"></i>
-		</div>
+        <div class="cart">
+          <h2 class="cart-title">Seu carrinho</h2>
+          <!-- Content -->
+          <div class="cart-content">
+            <div class="cart-box">
+              <img src="/img/calca_preta.png" alt="" class="cart-img" />
+              <div class="detail-box">
+                <div class="cart-product-title">Camisa</div>
+                <div class="cart-price">$50</div>
+                <input
+                  type="number"
+                  name=""
+                  id=""
+                  value="1"
+                  class="cart-quantitiy"
+                />
+              </div>
+              <!-- Remove Item -->
+              <i class="bx bx-trash-alt cart-remove"></i>
+            </div>
+          </div>
+          <!-- Total -->
+          <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+          </div>
+          <!-- Comprar Itens -->
+          <button type="button" class="btn-buy">Pagar agora</button>
+          <!-- Close Cart -->
+          <i class="bx bx-x" id="close-cart"></i>
+        </div>
       </nav>
       <!-- /.row -->
     </header>
 
-    <main>
-      <div class="cabecalho" id="cabecalho">
-        <h2 class="section-title">Mais vendidos</h2>
-        <p>
-          <span_container>&#139;</span_container>
-          <span_container>&#155;</span_container>
-        </p>
+    <main class="main">
+      <div class="cd-slider">
+        <ul>
+          <li>
+            <div
+              class="image"
+              style="
+                background-image: url(https://images.unsplash.com/photo-1421809313281-48f03fa45e9f?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);
+              "
+            ></div>
+            <div class="content">
+              <h2>Casacos</h2>
+              <a href="#shop">Veja na Galeria</a>
+            </div>
+          </li>
+          <li>
+            <div
+              class="image"
+              style="
+                background-image: url(https://images.unsplash.com/uploads/1411724908903377d4696/2e9b0cb2?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);
+              "
+            ></div>
+            <div class="content">
+              <h2>Accessorios</h2>
+              <a href="#shop">Veja na Galeria</a>
+            </div>
+          </li>
+          <li>
+            <div
+              class="image"
+              style="
+                background-image: url(https://images.unsplash.com/photo-1416838375725-e834a83f62b7?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);
+              "
+            ></div>
+            <div class="content">
+              <h2>Botas</h2>
+              <a href="#shop">Veja na Galeria</a>
+            </div>
+          </li>
+          <li>
+            <div
+              class="image"
+              style="
+                background-image: url(https://images.unsplash.com/35/JOd4DPGLThifgf38Lpgj_IMG.jpg?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);
+              "
+            ></div>
+            <div class="content">
+              <h2>Roupas de Inverno</h2>
+              <a href="#shop">Veja na Galeria</a>
+            </div>
+          </li>
+          <li>
+            <div
+              class="image"
+              style="
+                background-image: url(https://images.unsplash.com/photo-1453974336165-b5c58464f1ed?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);
+              "
+            ></div>
+            <div class="content">
+              <h2>Roupas de Verão</h2>
+              <a href="#shop">Veja na Galeria</a>
+            </div>
+          </li>
+        </ul>
       </div>
-
-      <section>
-        <div class="product">
-          <picture>
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihVtkBRVUsMjHSFG-G8TuBi_wVGxSb9bkllFqKwvmk70-qr-mERIxZyLvTXlQKnyCD2tFm_3Vs30eulZkzy1bs_Qvb27zfqO_9ZnVeoHtWQtEHFJhY-KvEbt5_ko1Glg4COH8uKQXH_Ed-iRh09FuNDir8XVylHe92lrgd2i9MN_IiCM2jTYTIiW9Ywv4i/s320/calca_preta.png" alt="" />
-          </picture>
-          <div class="detail">
-            <p>
-              <b>Calça Preta</b><br />
-              <a href=""><small>Calças</small></a>
-            </p>
-            <samp class="preco_antigo">De: R$ 65,00</samp>
-            <samp class="preco_novo">Por: R$ 45,00</samp>
-          </div>
-          <div class="button_container">
-            <a href="#" class="a_container add-cart">Comprar</a>
-          </div>
-        </div>
-        <div class="product">
-          <picture>
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhao5gsugl3RKyZKbMW-TXup_jTyg-g9pa9mMlQxZk8xGkuBrJUS6xYwaEzAxuFbyw2K4lZrotTtiQNMXNG8VPUbkGrAdyDkS-GkamZ2yw34Fa7tQSOfbzSLsc9Vwj_zNDRFs4yKN3h3hne8lk-Qn6bHjNEnD6BLi1RmnchSbyahLlRx7CJ3iDM3OQoXZOr/s320/short_preto.png" alt="" />
-          </picture>
-          <div class="detail">
-            <p>
-              <b>Short Preto</b><br />
-              <a href=""><small>Shorts</small></a>
-            </p>
-            <samp class="preco_antigo">De: R$ 65,00</samp>
-            <samp class="preco_novo">Por: R$ 45,00</samp>
-          </div>
-          <div class="button_container">
-            <a href="#" class="a_container">Comprar</a>
-          </div>
-        </div>
-        <div class="product">
-          <picture>
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFfOhPRgCRS2RVaGIaPiAvhBoKnIuEPC7X-ipoTal9_qWCzEKqN1jWIJcsIXhF2zaQAUAZq1z0tybMhmgyalnMBM5lVbdqfzySCQVWoiENMYAxwaB7Ev4WdwPErJ47SE_VjzPyeJYwmQa5_jjgur6ZpAETenAnkacHjTpn8-xheGvLtEv-GOR8TfMT-V1o/s320/short_azul.png" alt="" />
-          </picture>
-          <div class="detail">
-            <p>
-              <b>Short Azul Escuro</b><br />
-              <a href=""><small>Shorts</small></a>
-            </p>
-            <samp class="preco_antigo">De: R$ 65,00</samp>
-            <samp class="preco_novo">Por: R$ 45,00</samp>
-          </div>
-          <div class="button_container">
-            <a href="#" class="a_container">Comprar</a>
-          </div>
-        </div>
-        <div class="product">
-          <picture>
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQPVe2001FTFBPWwJ5MbY5WILV2LFDR4-BeuT7UitF74vEuOmcKPjM_242bXroFwQ9qlP4KHulzZoZDYD5UEQiLgRksWr0SEqiffQWTk4kbA7QgFyuaPVQw5_DsEOUT2vZ_nh3Cegz2OA8mP1bYUESPBcCF9NrdHYsQ0hoJxyvyDidjU5n5p55r1S7bZam/s320/banner4.png" alt="" />
-          </picture>
-          <div class="detail">
-            <p>
-              <b>Smart Watch</b><br />
-              <a href=""><small>Acessórios</small></a>
-            </p>
-            <samp class="preco_antigo">De: R$ 250,00</samp>
-            <samp class="preco_novo">Por: R$ 199,00</samp>
-          </div>
-          <div class="button_container">
-            <a href="#" class="a_container">Comprar</a>
-          </div>
-        </div>
-        <div class="product">
-          <picture>
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjm8P1r0F-ydgVYdNzrpQQKNSCnPgh8SikyKIu0Svb5Jrso6R25kQKIosLmLkt8qwN3R6ZiD3nPA5U62qhvQV1DOwZfnALAeeu1IVPBPlGTNMRdtFlx3DJJ7rNO-bM-ZeJJ_d_IH1KIE08KWRDzOl72o6dEUKkzox9yQ_Yv_w_d4ft6QZY4ebn-AVBqvTiH/s320/watch.png" alt="" />
-          </picture>
-          <div class="detail">
-            <p>
-              <b>Relógio de Ouro</b><br />
-              <a href=""><small>Acessórios</small></a>
-            </p>
-            <samp class="preco_antigo">De: R$ 324,99</samp>
-            <samp class="preco_novo">Por: R$ 299,99</samp>
-          </div>
-          <div class="button_container">
-            <a href="#" class="a_container">Comprar</a>
-          </div>
-        </div>
-        <div class="product">
-          <picture>
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0k3cp7xdt60vqIZoU34-A1JMcpHEivbJso-tPaQUPAB2o9-AT-OngugwDR64-N8V9wVSWIAXkNsMwqc8sFTwtJqCBRlO9QifC2-GCsI_25G3nxkRrb1cPEvdxUd4hJn1hrDZK3YD4FVxhsrdKY5ynxtbF9PdKh7DdrmQ6xjqTCDMFhDcuGiL4u953OBf8/s320/delta.png" alt="" />
-          </picture>
-          <div class="detail">
-            <p>
-              <b>Botas Cano Longo</b><br />
-              <a href=""><small>Calçados</small></a>
-            </p>
-            <samp class="preco_antigo">De: R$ 65,00</samp>
-            <samp class="preco_novo">Por: R$ 45,00</samp>
-          </div>
-          <div class="button_container">
-            <a href="#" class="a_container">Comprar</a>
-          </div>
-        </div>
-        <div class="product">
-          <picture>
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgjqqttGYFYQA8g9s1HXFwjzPUCz1fadiSBcZjQ5UMPdYEMQ0ffz7dT2jQ7JQ6dkv9Ifhm0tDw1VQXPRsrSuBOGGi8IyygqLCbEKEjFGOmLmLnuoKbNJlH1tLdA4AdWgVK2wVW0FFYrSj-gNKhv_0JxNfxLAj1cesVrVVMqQybT84AP_m8pjBR_5Gl3NMp/s320/image3.png" alt="" />
-          </picture>
-          <div class="detail">
-            <p>
-              <b>Sapato Alongado</b><br />
-              <a href=""><small>Calçados</small></a>
-            </p>
-            <samp class="preco_antigo">De: R$ 65,00</samp>
-            <samp class="preco_novo">Por: R$ 45,00</samp>
-          </div>
-          <div class="button_container">
-            <a href="#" class="a_container">Comprar</a>
-          </div>
-        </div>
-        <div class="product">
-          <picture>
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_TjKAT88BukustSwJjnadC7WIAXsezp2AWWM4kAIWuPJk1ORKahescsTkvBvbhrGSKj8TrWoR1KJurM3I_7ucTRSTyRASVuCVwqwoKlNHyyLeQqWxuovy2Pe4Pk98ZBg62GwjQ4VYq-WZKBipZPawbATXyeCP4uZUcsj9t7YpjPY25hq0BLlm8OFcqAX0/s320/image2.png" alt="" />
-          </picture>
-          <div class="detail">
-            <p>
-              <b>Salto alto</b><br />
-              <a href=""><small>Calçados</small></a>
-            </p>
-            <samp class="preco_antigo">De: R$ 65,00</samp>
-            <samp class="preco_novo">Por: R$ 45,00</samp>
-          </div>
-          <div class="button_container">
-            <a href="#" class="a_container">Comprar</a>
-          </div>
-        </div>
-        <div class="product">
-          <picture>
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQjsaBt60gVv5RYTmWr_A9R__TNYLn9CLfgvx38pCY8i01AQrKTAPPTlq36-DK_R4C3sRojA9BtMrn2RwMTw7XPYCQWp_lQoO5wOVZAno7KgxhKS_EpcA-RL2osJZYSfHJOXWNFDNAtokbEWNenTtnhP_V6oXN_paxwYRi_czJ_t3l1Ez5oueMTrPPKpW0/s320/nokia.png" alt="" />
-          </picture>
-          <div class="detail">
-            <p>
-              <b>Telefone Nokia</b><br />
-              <a href=""><small>Dispositivos</small></a>
-            </p>
-            <samp class="preco_antigo">De: R$ 65,00</samp>
-            <samp class="preco_novo">Por: R$ 45,00</samp>
-          </div>
-          <div class="button_container">
-            <a href="#" class="a_container">Comprar</a>
-          </div>
-        </div>
-        <div class="product">
-          <picture>
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkYM_80KRC9Xki9-RILzi3z6Qw1nqPQn5KLxanGrOdMIqvUWH0uzX_uIppxpmaVRS_yWqmPhC2mT7rfoHUl9u175X5qJSQgRVW_Z7b8u-Giwwq8H04H6jeaD5WGMUnwnw-ZfwHsQpOb-lV2q5SGNb_6AILNg5N7T-dajHMCWO-AQLYFBKWmBHF1vSgYeuS/s320/nokia-air.png" alt="" />
-          </picture>
-          <div class="detail">
-            <p>
-              <b>Fones Bluetooth</b><br />
-              <a href=""><small>Acessórios</small></a>
-            </p>
-            <samp class="preco_antigo">De: R$ 65,00</samp>
-            <samp class="preco_novo">Por: R$ 45,00</samp>
-          </div>
-          <div class="button_container">
-            <a href="#" class="a_container">Comprar</a>
-          </div>
-        </div>
-        <div class="product">
-          <picture>
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPbgXnzYwDsQLkTjkOyq-ArQrBZJvjRQ-yYKXF7euz45cNIgyVzeXkXFWWYUmfdeE-X6OGKezqOAUjGvxdKpADf-vfTBkaCZWGWLt-r7F4CW2X8Bz-h3Fpst2HjxWZZBGXJUbkSvbj-PPk045MvXg7PDE87dzrBE73Vindzk9542MKJRBCuMnLeguTIZP5/s320/feature_3.png" alt="" />
-          </picture>
-          <div class="detail">
-            <p>
-              <b>Saptos casual</b><br />
-              <a href=""><small>Calçados</small></a>
-            </p>
-            <samp class="preco_antigo">De: R$ 65,00</samp>
-            <samp class="preco_novo">Por: R$ 45,00</samp>
-          </div>
-          <div class="button_container">
-            <a href="#" class="a_container">Comprar</a>
-          </div>
-        </div>
-        <div class="product">
-          <picture>
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjuIDuP0SJf2m6QFELbYsdUZSzRuwns-txBkUTN5S4jda12agRh3LNLH6aKUNWsFEvG9OTUbVWquyRo9lc-yFUpCvzwGAEGEhBPNyv85puKmKAqbx6YgU7v16iWz4hgclpgDCJtB2NP3y39G0VS0elIO_qANCyhbmIsibLUy8F8OWPb0zJ6KchR4moU7NvK/s320/one.png" alt="" />
-          </picture>
-          <div class="detail">
-            <p>
-              <b>product Twelve</b><br />
-              <small>Novo Produto</small>
-            </p>
-            <samp>R$ 45.00</samp>
-          </div>
-          <div class="button_container">
-            <a href="#" class="a_container">Comprar</a>
-          </div>
-        </div>
-      </section>
+      <!--/.cd-slider-->
     </main>
     <div class="container pt-5 pb-4">
       <div class="row mb-4">
@@ -388,79 +259,124 @@
       </div>
       <!-- /.row -->
 
-      <div class="row align-items-center mb-4" id="novidades">
-        <div class="col-9">
-          <h2 class="section-title">Novos Produtos</h2>
-        </div>
-        <!-- /.col-9 -->
-        <div class="col-3 d-flex justify-content-end">
-          <a href="#" class="more">Confira</a>
-        </div>
-        <!-- /.col-3 -->
-      </div>
-      <!-- /.row -->
-      <div class="row">
-        <div class="col-lg-3 col-sm-6">
-          <a href="#" class="goods-card">
-            <span class="label">Novos</span>
-            <!-- /.label -->
+      <section class="shop container" id="shop">
+        <h2 class="section-title">Produtos</h2>
+        <!--Shop Content-->
+        <div class="shop-content">
+          <!--Box1-->
+          <div class="product-box">
+            <!--Stripe, need online img-->
             <img
               src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihVtkBRVUsMjHSFG-G8TuBi_wVGxSb9bkllFqKwvmk70-qr-mERIxZyLvTXlQKnyCD2tFm_3Vs30eulZkzy1bs_Qvb27zfqO_9ZnVeoHtWQtEHFJhY-KvEbt5_ko1Glg4COH8uKQXH_Ed-iRh09FuNDir8XVylHe92lrgd2i9MN_IiCM2jTYTIiW9Ywv4i/s320/calca_preta.png"
-              alt="img: Hoodie"
-              class="goods-img"
+              alt=""
+              class="product img"
             />
-            <h3 class="goods-title">Calça Preta Slim</h3>
-            <!-- /.goods-title -->
-            <p class="goods-description">Preta</p>
-            <!-- /.goods-description -->
-            <span class="preco_novo">R$ 45</span>
-            <!-- /.preco_novo -->
-          </a>
-          <!-- /.goods-card -->
-        </div>
-        <!-- /.col-3 -->
-
-        <div class="col-lg-3 col-sm-6">
-          <a href="#" class="goods-card">
-            <span class="label">Novos</span>
-            <!-- /.label -->
-            <img
-              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFfOhPRgCRS2RVaGIaPiAvhBoKnIuEPC7X-ipoTal9_qWCzEKqN1jWIJcsIXhF2zaQAUAZq1z0tybMhmgyalnMBM5lVbdqfzySCQVWoiENMYAxwaB7Ev4WdwPErJ47SE_VjzPyeJYwmQa5_jjgur6ZpAETenAnkacHjTpn8-xheGvLtEv-GOR8TfMT-V1o/s320/short_azul.png"
-              alt="img: Faded Beach Trousers"
-              class="goods-img"
-            />
-            <h3 class="goods-title">Short Curto</h3>
-            <!-- /.goods-title -->
-            <p class="goods-description">Azul Escuro</p>
-            <!-- /.goods-description -->
-            <span class="preco_novo">R$ 45</span>
-            <!-- /.preco_novo -->
-          </a>
-          <!-- /.goods-card -->
-        </div>
-        <!-- /.col-3 -->
-
-        <div class="col-lg-3 col-sm-6">
-          <a href="#" class="goods-card">
-            <span class="label">Novos</span>
-            <!-- /.label -->
+            <h2 class="product-title">Roupa</h2>
+            <span class="price">$50</span>
+            <i
+              class="bx bx-shopping-bag add-cart"
+              alt="Ícone do carrinho de compras"
+              data-quantitiy="0"
+            ></i>
+          </div>
+          <!--Box2-->
+          <div class="product-box">
+            <!--Stripe, need online img-->
             <img
               src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhao5gsugl3RKyZKbMW-TXup_jTyg-g9pa9mMlQxZk8xGkuBrJUS6xYwaEzAxuFbyw2K4lZrotTtiQNMXNG8VPUbkGrAdyDkS-GkamZ2yw34Fa7tQSOfbzSLsc9Vwj_zNDRFs4yKN3h3hne8lk-Qn6bHjNEnD6BLi1RmnchSbyahLlRx7CJ3iDM3OQoXZOr/s320/short_preto.png"
-              alt="img: Text Camisa"
-              class="goods-img"
+              alt=""
+              class="product img"
             />
-            <h3 class="goods-title">Short Curto</h3>
-            <!-- /.goods-title -->
-            <p class="goods-description">Preto</p>
-            <!-- /.goods-description -->
-            <span class="preco_novo">R$ 45</span>
-            <!-- /.preco_novo -->
-          </a>
-          <!-- /.goods-card -->
+            <h2 class="product-title">Roupa</h2>
+            <span class="price">$50</span>
+            <i
+              class="bx bx-shopping-bag add-cart"
+              alt="Ícone do carrinho de compras"
+              data-quantitiy="0"
+            ></i>
+          </div>
+          <!--Box3-->
+          <div class="product-box">
+            <!--Stripe, need online img-->
+            <img
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFfOhPRgCRS2RVaGIaPiAvhBoKnIuEPC7X-ipoTal9_qWCzEKqN1jWIJcsIXhF2zaQAUAZq1z0tybMhmgyalnMBM5lVbdqfzySCQVWoiENMYAxwaB7Ev4WdwPErJ47SE_VjzPyeJYwmQa5_jjgur6ZpAETenAnkacHjTpn8-xheGvLtEv-GOR8TfMT-V1o/s320/short_azul.png"
+              alt=""
+              class="product img"
+            />
+            <h2 class="product-title">Roupa</h2>
+            <span class="price">$50</span>
+            <i
+              class="bx bx-shopping-bag add-cart"
+              alt="Ícone do carrinho de compras"
+              data-quantitiy="0"
+            ></i>
+          </div>
+          <!--Box4-->
+          <div class="product-box">
+            <!--Stripe, need online img-->
+            <img
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQPVe2001FTFBPWwJ5MbY5WILV2LFDR4-BeuT7UitF74vEuOmcKPjM_242bXroFwQ9qlP4KHulzZoZDYD5UEQiLgRksWr0SEqiffQWTk4kbA7QgFyuaPVQw5_DsEOUT2vZ_nh3Cegz2OA8mP1bYUESPBcCF9NrdHYsQ0hoJxyvyDidjU5n5p55r1S7bZam/s320/banner4.png"
+              alt=""
+              class="product img"
+            />
+            <h2 class="product-title">Roupa</h2>
+            <span class="price">$50</span>
+            <i
+              class="bx bx-shopping-bag add-cart"
+              alt="Ícone do carrinho de compras"
+              data-quantitiy="0"
+            ></i>
+          </div>
+          <!--Box5-->
+          <div class="product-box">
+            <!--Stripe, need online img-->
+            <img
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjm8P1r0F-ydgVYdNzrpQQKNSCnPgh8SikyKIu0Svb5Jrso6R25kQKIosLmLkt8qwN3R6ZiD3nPA5U62qhvQV1DOwZfnALAeeu1IVPBPlGTNMRdtFlx3DJJ7rNO-bM-ZeJJ_d_IH1KIE08KWRDzOl72o6dEUKkzox9yQ_Yv_w_d4ft6QZY4ebn-AVBqvTiH/s320/watch.png"
+              alt=""
+              class="product img"
+            />
+            <h2 class="product-title">Roupa</h2>
+            <span class="price">$50</span>
+            <i
+              class="bx bx-shopping-bag add-cart"
+              alt="Ícone do carrinho de compras"
+              data-quantitiy="0"
+            ></i>
+          </div>
+          <!--Box5-->
+          <div class="product-box">
+            <!--Stripe, need online img-->
+            <img
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjm8P1r0F-ydgVYdNzrpQQKNSCnPgh8SikyKIu0Svb5Jrso6R25kQKIosLmLkt8qwN3R6ZiD3nPA5U62qhvQV1DOwZfnALAeeu1IVPBPlGTNMRdtFlx3DJJ7rNO-bM-ZeJJ_d_IH1KIE08KWRDzOl72o6dEUKkzox9yQ_Yv_w_d4ft6QZY4ebn-AVBqvTiH/s320/watch.png"
+              alt=""
+              class="product img"
+            />
+            <h2 class="product-title">Roupa</h2>
+            <span class="price">$50</span>
+            <i
+              class="bx bx-shopping-bag add-cart"
+              alt="Ícone do carrinho de compras"
+              data-quantitiy="0"
+            ></i>
+          </div>
+          <!--Box5-->
+          <div class="product-box">
+            <!--Stripe, need online img-->
+            <img
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjm8P1r0F-ydgVYdNzrpQQKNSCnPgh8SikyKIu0Svb5Jrso6R25kQKIosLmLkt8qwN3R6ZiD3nPA5U62qhvQV1DOwZfnALAeeu1IVPBPlGTNMRdtFlx3DJJ7rNO-bM-ZeJJ_d_IH1KIE08KWRDzOl72o6dEUKkzox9yQ_Yv_w_d4ft6QZY4ebn-AVBqvTiH/s320/watch.png"
+              alt=""
+              class="product img"
+            />
+            <h2 class="product-title">Roupa</h2>
+            <span class="price">$50</span>
+            <i
+              class="bx bx-shopping-bag add-cart"
+              alt="Ícone do carrinho de compras"
+              data-quantitiy="0"
+            ></i>
+          </div>
         </div>
-        <!-- /.col-3 -->
-      </div>
-      <!-- /.container -->
+      </section>
     </div>
     <footer class="footer">
       <div class="container">
@@ -549,6 +465,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="/js/main.js"></script>
-	<script src="/js/cart.js"></script>
+    <script src="/js/cart.js"></script>
+    <script src="/js/slide.js"></script>
   </body>
 </html>
