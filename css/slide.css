@@ -49,7 +49,7 @@
   opacity: 0;
   transition: transform 0.5s, opacity 0.5s;
   will-change: transform, opacity;
-  color: #113e21;
+  color: #226603;
 }
 .content a {
   display: inline-block;
