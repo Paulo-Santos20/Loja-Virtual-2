@@ -9,6 +9,7 @@
   height: 50rem;
   overflow: hidden;
   margin-bottom: 8rem;
+  border-radius: 8px;
 }
 .cd-slider li {
   position: absolute;
@@ -53,8 +54,8 @@
 }
 .content a {
   display: inline-block;
-  font-size: 2rem;
-  text-transform: lowercase;
+  font-size: 1.2rem;
+  text-transform: capitalize;
   padding: 1.5rem;
   opacity: 0;
   transform: translateY(-100%);
