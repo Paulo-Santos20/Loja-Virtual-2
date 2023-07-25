@@ -1,4 +1,4 @@
-body{
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,9 +12,9 @@ body{
 }
 
 /*--Cart--*/
-#cart-icon{
-  position: relative;  
-  left:550px; /* Distância em relação à parte direita da página */
+#cart-icon {
+  position: relative;
+  left: 550px; /* Distância em relação à parte direita da página */
   font-size: 30px;
   box-shadow: 0 0 10px #b38b59;
   border-radius: 10%; /* Adiciona um raio de borda para tornar o ícone circular */
@@ -22,27 +22,27 @@ body{
   padding: 5px;
   cursor: pointer;
 }
-#cart-icon[data-quantitiy]::after{
-  contain: '';
+#cart-icon[data-quantitiy]::after {
+  contain: "";
 }
-#cart-icon[data-quantitiy]::after{
-content: '';
-position: absolute;
-top: 0;
-right: -12px;
-width: 20px;
-height: 20px;
-background-color: var(--cor-secundaria);
-border-radius: 50%;
-color: white;
-font-size: 12px;
-font-weight: 500;
-display: flex;
-align-items: center;
-justify-content: center;
+#cart-icon[data-quantitiy]::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -12px;
+  width: 20px;
+  height: 20px;
+  background-color: var(--cor-secundaria);
+  border-radius: 50%;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /*-- Cart --*/
-.cart{
+.cart {
   position: fixed;
   top: 0;
   right: -100%;
@@ -53,33 +53,32 @@ justify-content: center;
   box-shadow: -2px 0 4px hsl(0, 4%, 15% / 10%);
   transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.cart.active{
+.cart.active {
   right: 0;
   transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
-
 }
-.cart-title{
+.cart-title {
   text-align: center;
   font-size: 24px;
   font-weight: 600;
   margin-top: 32px;
 }
-.total{
+.total {
   display: flex;
   justify-content: flex-end;
   margin-top: 1.5rem;
   border-top: 1px solid var(--cor-primaria);
 }
-.total-title{
+.total-title {
   font-size: 1.2rem;
   font-weight: 600;
-  margin-top: 1rem ;
+  margin-top: 1rem;
 }
-.total-price{
+.total-price {
   font-size: 1.075rem;
   margin: 1rem 0 0 0.7rem;
 }
-.btn-buy{
+.btn-buy {
   display: flex;
   justify-content: center;
   margin: 1.5rem auto 0 auto;
@@ -88,58 +87,57 @@ justify-content: center;
   text-align: center;
   border: none;
   border-radius: 2rem;
-  background-color: #b17704;
-  color: #113e21;
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
   font: 1rem;
   font-style: italic;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
 }
 
-#close-cart{
-position: absolute;
-top: 1rem;
-right: 0.8rem;
-font-size: 2rem;
-color: #b17704;
-cursor: pointer;
+#close-cart {
+  position: absolute;
+  top: 1rem;
+  right: 0.8rem;
+  font-size: 2rem;
+  color: #b17704;
+  cursor: pointer;
 }
-
-.cart-box{
+.cart-box {
   display: grid;
   grid-template-columns: 32% 50% 18%;
   align-items: center;
   gap: 1rem;
   margin-top: 1rem;
 }
-.cart-img{
+.cart-img {
   width: 100px;
   height: 100px;
   object-fit: contain;
   object-position: center;
   padding: 10px;
 }
-.detail-box{
+.detail-box {
   display: grid;
   row-gap: 0.5rem;
 }
-.cart-product-title{
+.cart-product-title {
   font: 1rem;
   font-weight: 500;
   text-transform: uppercase;
 }
-.cart-price{
+.cart-price {
   font-weight: 500;
 }
-.cart-quantitiy{
-  border: 1px solid var(--cor-secundaria);
-  outline-color: var(--cor-primaria);
+.cart-quantity {
+  border: 1px solid var(--cor-primaria);
+  outline-color: var(--cor-secundaria);
   text-align: center;
   width: 2.8rem;
   font-size: 1rem;
   border-radius: 4px;
 }
-.cart-remove{
+.cart-remove {
   font-size: 24px;
   color: var(--cor-primaria);
   cursor: pointer;
@@ -153,7 +151,6 @@ main {
   position: relative;
   padding: 25px 0;
   margin-bottom: 50px;
-  
 }
 main .text {
   padding: 10px;
@@ -260,9 +257,9 @@ small {
 }
 
 @media (max-width: 768px) {
-  main {    
-  width: 100%;
-  height: 750px;
+  main {
+    width: 100%;
+    height: 750px;
   }
   .text h1 {
     font-size: 35px;
@@ -530,16 +527,16 @@ small {
     background-position: right top;
   }
   .detail,
-  .button_container   {
+  .button_container {
     font-size: 12px;
-    margin: 0;    
-  height: 0;
-  margin-top: 32px;
+    margin: 0;
+    height: 0;
+    margin-top: 32px;
   }
 }
 
 /*--------Pagamento Efetuado---------*/
-.sc-container{
+.sc-container {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -547,17 +544,17 @@ small {
   justify-content: center;
   align-items: center;
 }
-.sc-container h1{
+.sc-container h1 {
   font-size: 2.8rem;
-  margin-bottom: 10px;  
+  margin-bottom: 10px;
 }
-.sc-container p{
-max-width: 600px;
-font-size: 0.970rem;
-text-align: center;
-margin: 0.5rem 0;
+.sc-container p {
+  max-width: 600px;
+  font-size: 0.97rem;
+  text-align: center;
+  margin: 0.5rem 0;
 }
-.sc-btn{
+.sc-btn {
   padding: 12px 20px;
   border-radius: 2rem;
   background-color: #b17704;
@@ -567,17 +564,16 @@ margin: 0.5rem 0;
 }
 /*--------Pagamento Efetuado---------*/
 
-
 /*--------Shop--------*/
-.section-title{
+.section-title {
   font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
   margin-bottom: 1.8rem;
 }
 
-.shop{
-  margin-top: 2rem;  
+.shop {
+  margin-top: 2rem;
 }
 .shop-content {
   display: grid;
@@ -585,12 +581,12 @@ margin: 0.5rem 0;
   gap: 1.5rem;
   height: 100%;
 }
-.product-box{
+.product-box {
   position: relative;
   background: var(--cor-destaque);
   padding: 10px;
   border-radius: 5px;
-  transition: 0,4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 0, 4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .product-box:hover {
   background-color: var(--cor-subdestaque);
@@ -600,33 +596,33 @@ margin: 0.5rem 0;
 .product-box:hover .product-title,
 .product-box:hover .price {
   color: black;
-}  
-.product-img{
+}
+.product-img {
   width: 100%;
   height: auto;
   border-radius: 5px;
   margin-bottom: 0.5rem;
 }
-.product-title{
+.product-title {
   font-size: 1.1rem;
   font-weight: 550;
-  text-transform:capitalize;
+  text-transform: capitalize;
   margin-bottom: 0.8rem;
 }
-.price{
-  font-weight: 600;  
+.price {
+  font-weight: 600;
 }
-.add-cart{
+.add-cart {
   position: absolute;
   bottom: 10px;
   right: 10px;
   background: var(--cor-secundaria);
   color: white;
   padding: 10px;
-  font-size:1.2rem;
+  font-size: 1.2rem;
   border-radius: 50%;
   cursor: pointer;
 }
-.add-cart:hover{
+.add-cart:hover {
   background-color: var(--cor-primaria);
 }
