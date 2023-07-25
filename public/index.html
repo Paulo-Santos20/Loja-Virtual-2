@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veneza Shopping</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto+Slab:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/slide.css" />
+    <link rel="shortcut icon" href="img/logo-roupa.jpg" type="image/x-icon" />
+    <script>
+      document.documentElement.className = "js";
+    </script>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <img
+          src="img/logo-roupa.jpg"
+          style="
+            width: 8%;
+            position: absolute;
+            left: 0;
+            border-radius: 5px;
+            margin-left: 40px;
+            margin-top: 20px;
+          "
+          alt=""
+          class="nav_img"
+        />
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link active-link">
+                <i class="bx bx-female nav__icon"></i>
+                <span class="nav__name">Mulheres</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="Institucional.html" class="nav__link">
+                <i class="bx bx-male nav__icon"></i>
+                <span class="nav__name">Homens</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="Unidades.html" class="nav__link">
+                <i class="fa-regular fa-gem nav__icon"></i>
+                <span class="nav__name">Acessórios</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="Transparencia.html" class="nav__link">
+                <i class="fa-solid fa-users-between-lines nav__icon"></i>
+                <span class="nav__name">Novidades</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="Oportunidades.html" class="nav__link">
+                <i class="bx bx-group nav__icon"></i>
+                <span class="nav__name">Contatos</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Cart Icon-->
+        <i
+          class="bx bx-shopping-bag"
+          alt="Ícone do carrinho de compras"
+          id="cart-icon"
+          data-quantity="0"
+        ></i>
+        <!-- Cart-->
+        <div class="cart">
+          <h2 class="cart-title">Seu carrinho</h2>
+          <!-- Content -->
+          <div class="cart-content"></div>
+          <!-- Total -->
+          <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+          </div>
+          <!-- Comprar Itens -->
+          <button type="button" class="btn-buy">Pagar agora</button>
+          <!-- Close Cart -->
+          <i class="bx bx-x" id="close-cart"></i>
+        </div>
+      </nav>
+      <!-- /.row -->
+    </header>
+
+    <main class="main">
+      <div class="cd-slider">
+        <ul>
+          <li>
+            <div
+              class="image"
+              style="
+                background-image: url(https://images.unsplash.com/photo-1421809313281-48f03fa45e9f?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);
+              "
+            ></div>
+            <div class="content">
+              <h2>Casacos</h2>
+              <a href="#shop">Veja na Galeria</a>
+            </div>
+          </li>
+          <li>
+            <div
+              class="image"
+              style="
+                background-image: url(https://images.unsplash.com/uploads/1411724908903377d4696/2e9b0cb2?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);
+              "
+            ></div>
+            <div class="content">
+              <h2>Accessorios</h2>
+              <a href="#shop">Veja na Galeria</a>
+            </div>
+          </li>
+          <li>
+            <div
+              class="image"
+              style="
+                background-image: url(https://images.unsplash.com/photo-1416838375725-e834a83f62b7?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);
+              "
+            ></div>
+            <div class="content">
+              <h2>Botas</h2>
+              <a href="#shop">Veja na Galeria</a>
+            </div>
+          </li>
+          <li>
+            <div
+              class="image"
+              style="
+                background-image: url(https://images.unsplash.com/35/JOd4DPGLThifgf38Lpgj_IMG.jpg?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);
+              "
+            ></div>
+            <div class="content">
+              <h2>Inverno</h2>
+              <a href="#shop">Veja na Galeria</a>
+            </div>
+          </li>
+          <li>
+            <div
+              class="image"
+              style="
+                background-image: url(https://images.unsplash.com/photo-1453974336165-b5c58464f1ed?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);
+              "
+            ></div>
+            <div class="content">
+              <h2>Verão</h2>
+              <a href="#shop">Veja na Galeria</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!--/.cd-slider-->
+    </main>
+    <div class="container pt-5 pb-4">
+      <div class="row mb-4">
+        <div class="col-xl-6">
+          <div class="card card-1 mb-4">
+            <h3 class="card-title">Camisas, blusas e moletons</h3>
+            <p class="card-text"></p>
+            <a href="/produtos/camisa.html" class="button">
+              <span class="button-text">Confira</span>
+              <img
+                src="./img/arrow.svg"
+                alt="icon: arrow"
+                class="button-icon"
+              />
+            </a>
+          </div>
+          <!-- /.card -->
+        </div>
+
+        <!-- /.col-6 -->
+        <div class="col-xl-6">
+          <div class="card card-2 mb-4">
+            <h3 class="card-title text-light">Calças, Shorts e Bermudas</h3>
+            <p class="card-text text-light"></p>
+            <a href="/produtos/calca.html" class="button">
+              <span class="button-text">Confira</span>
+              <img
+                src="./img/arrow.svg"
+                alt="icon: arrow"
+                class="button-icon"
+              />
+            </a>
+          </div>
+          <!-- /.card -->
+        </div>
+        <!-- /.col-6 -->
+        <div class="col-xl-9 col-lg-6">
+          <div class="card card-3 mb-4">
+            <span class="label">Mais vendidos</span>
+            <h3 class="card-title large">Looks completo<br /></h3>
+            <p class="card-text large">Para você que gosta de se vestir bem</p>
+            <a href="/produtos/look_completo.html" class="button">
+              <span class="button-text">Confira</span>
+              <img
+                src="./img/arrow.svg"
+                alt="icon: arrow"
+                class="button-icon"
+              />
+            </a>
+          </div>
+          <!-- /.card -->
+        </div>
+        <!-- /.col-9 -->
+        <div class="col-xl-3 col-lg-6">
+          <div class="card card-4">
+            <h3 class="card-title text-light">Acessórios mais vendidos</h3>
+            <p class="card-text text-light">Óculos, Colares e Joias</p>
+            <a href="/produtos/acessorios.html" class="button">
+              <span class="button-text">Confira</span>
+              <img
+                src="./img/arrow.svg"
+                alt="icon: arrow"
+                class="button-icon"
+              />
+            </a>
+          </div>
+          <!-- /.card -->
+        </div>
+        <!-- /.col-3 -->
+      </div>
+      <!-- /.row -->
+
+      <section class="shop container" id="shop">
+        <h2 class="section-title">Produtos</h2>
+        <!--Shop Content-->
+        <div class="shop-content">
+          <!--Box1-->
+          <div class="product-box">
+            <!--Stripe, need online img-->
+            <img
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihVtkBRVUsMjHSFG-G8TuBi_wVGxSb9bkllFqKwvmk70-qr-mERIxZyLvTXlQKnyCD2tFm_3Vs30eulZkzy1bs_Qvb27zfqO_9ZnVeoHtWQtEHFJhY-KvEbt5_ko1Glg4COH8uKQXH_Ed-iRh09FuNDir8XVylHe92lrgd2i9MN_IiCM2jTYTIiW9Ywv4i/s320/calca_preta.png"
+              alt=""
+              class="product img"
+            />
+            <h2 class="product-title">Calça justa</h2>
+            <span class="price">$50</span>
+            <i
+              class="bx bx-shopping-bag add-cart"
+              alt="Ícone do carrinho de compras"
+              data-quantity="0"
+            ></i>
+          </div>
+          <!--Box2-->
+          <div class="product-box">
+            <!--Stripe, need online img-->
+            <img
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhao5gsugl3RKyZKbMW-TXup_jTyg-g9pa9mMlQxZk8xGkuBrJUS6xYwaEzAxuFbyw2K4lZrotTtiQNMXNG8VPUbkGrAdyDkS-GkamZ2yw34Fa7tQSOfbzSLsc9Vwj_zNDRFs4yKN3h3hne8lk-Qn6bHjNEnD6BLi1RmnchSbyahLlRx7CJ3iDM3OQoXZOr/s320/short_preto.png"
+              alt=""
+              class="product img"
+            />
+            <h2 class="product-title">Short Curto</h2>
+            <span class="price">$50</span>
+            <i
+              class="bx bx-shopping-bag add-cart"
+              alt="Ícone do carrinho de compras"
+              data-quantity="0"
+            ></i>
+          </div>
+          <!--Box3-->
+          <div class="product-box">
+            <!--Stripe, need online img-->
+            <img
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFfOhPRgCRS2RVaGIaPiAvhBoKnIuEPC7X-ipoTal9_qWCzEKqN1jWIJcsIXhF2zaQAUAZq1z0tybMhmgyalnMBM5lVbdqfzySCQVWoiENMYAxwaB7Ev4WdwPErJ47SE_VjzPyeJYwmQa5_jjgur6ZpAETenAnkacHjTpn8-xheGvLtEv-GOR8TfMT-V1o/s320/short_azul.png"
+              alt=""
+              class="product img"
+            />
+            <h2 class="product-title">Short Curto</h2>
+            <span class="price">$50</span>
+            <i
+              class="bx bx-shopping-bag add-cart"
+              alt="Ícone do carrinho de compras"
+              data-quantity="0"
+            ></i>
+          </div>
+          <!--Box4-->
+          <div class="product-box">
+            <!--Stripe, need online img-->
+            <img
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQPVe2001FTFBPWwJ5MbY5WILV2LFDR4-BeuT7UitF74vEuOmcKPjM_242bXroFwQ9qlP4KHulzZoZDYD5UEQiLgRksWr0SEqiffQWTk4kbA7QgFyuaPVQw5_DsEOUT2vZ_nh3Cegz2OA8mP1bYUESPBcCF9NrdHYsQ0hoJxyvyDidjU5n5p55r1S7bZam/s320/banner4.png"
+              alt=""
+              class="product img"
+            />
+            <h2 class="product-title">Smartwatch</h2>
+            <span class="price">$50</span>
+            <i
+              class="bx bx-shopping-bag add-cart"
+              alt="Ícone do carrinho de compras"
+              data-quantity="0"
+            ></i>
+          </div>
+          <!--Box5-->
+          <div class="product-box">
+            <!--Stripe, need online img-->
+            <img
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4HvYMLbQAeu4zMozduInNmq7l0HuZp7ri91FFoWlZoyjHMjd102xYMikr1r3cPM9HUSkzIBZ1t_U2sT5fTsKqFYBGFRzzwxboXFvNftL_JRjG2EkOh2FBjUT5T7RnGua2S0mtaBuLfe_kGxITMtsoHe0TJI8P6Rnrqsm-hWcyNhVt8uCklccjoyEZ43G7/s320/banner3.png"
+              alt=""
+              class="product img"
+            />
+            <h2 class="product-title">Sapato Masculino</h2>
+            <span class="price">$50</span>
+            <i
+              class="bx bx-shopping-bag add-cart"
+              alt="Ícone do carrinho de compras"
+              data-quantity="0"
+            ></i>
+          </div>
+          <!--Box5-->
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-7 mb-4 mb-xl-0">
+            <nav>
+              <ul class="footer-menu d-sm-flex">
+                <li class="footer-menu-item">
+                  <a href="index.html" class="footer-menu-link">Loja</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a
+                    href="https://www.google.com.br/maps/place/R.+C,+185+-+%C3%81gua+Branca,+Vit%C3%B3ria+de+Santo+Ant%C3%A3o+-+PE/@-8.0984771,-35.2845447,3a,75y,1.89h,83.6t/data=!3m6!1e1!3m4!1shwTGwWquB86WU8nsctS8UQ!2e0!7i16384!8i8192!4m7!3m6!1s0x7abab46678966d3:0x494962314ac81bc!8m2!3d-8.0985729!4d-35.2848957!10e5!16s%2Fg%2F11c28_shlw?entry=ttu"
+                    class="footer-menu-link"
+                    target="_blank"
+                    >Localização</a
+                  >
+                </li>
+                <li class="footer-menu-item">
+                  <a href="#" class="footer-menu-link">Sobre Nós</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- /.col-7 -->
+          <div class="col-lg-3 d-flex align-items-center">
+            <span class="footer-text">Nos siga</span>
+            <span class="footer-social d-inline-flex align-items-center">
+              <a
+                href="https://wa.me/5581983345386?text=Ol%C3%A1%2C+tenho+interesse+em+comprar"
+                class="social-link"
+                target="_blank"
+                ><img src="./img/whatsapp.svg" alt="whatsapp"
+              /></a>
+              <a href="#" class="social-link"
+                ><img src="./img/facebook.svg" alt="facebook"
+              /></a>
+              <a href="#" class="social-link"
+                ><img src="./img/twitter.svg" alt="twitter"
+              /></a>
+              <a href="#" class="social-link"
+                ><img src="./img/instagram.svg" alt="instagram"
+              /></a>
+            </span>
+          </div>
+          <!-- /.col-7 -->
+          <div
+            class="col-xl-2 col-lg-3 d-flex justify-content-lg-end mt-4 mt-lg-0"
+          >
+            <span class="footer-text">© 2023 Veneza Shopping</span>
+          </div>
+          <!-- /.col-2 -->
+        </div>
+        <!-- /.row -->
+        <hr class="footer-line mt-4 mb-4" />
+        <div class="row justify-content-between">
+          <div class="col-lg-4 col-sm-9 footer-payment">
+            <img class="payment-logo" src="./img/visa.png" alt="visa logo" />
+            <img
+              class="payment-logo"
+              src="./img/mastercard.png"
+              alt="mastercard logo"
+            />
+            <img
+              class="payment-logo"
+              src="./img/paypal.png"
+              alt="paypal logo"
+            />
+          </div>
+          <!-- /.col-4 -->
+          <div class="col-lg-2 col-sm-3 d-flex justify-content-end">
+            <a href="#" class="top-link d-flex align-items-center">
+              <span class="top-link-text">Top</span>
+              <img src="./img/top-arrow.svg" alt="icon: arrow top" />
+            </a>
+          </div>
+          <!-- /.col-2 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </footer>
+    <!-- /.footer -->
+    <script
+      src="https://kit.fontawesome.com/b1048cf95c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/cart.js"></script>
+    <script src="js/slide.js"></script>
+  </body>
+</html>
