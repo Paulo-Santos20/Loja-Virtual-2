@@ -489,8 +489,6 @@ small {
   margin-left: 25px;
 }
 
-
-
 /*--------Pagamento Efetuado---------*/
 .sc-container {
   width: 100%;
@@ -540,7 +538,7 @@ small {
 .product-box {
   position: relative;
   background: var(--cor-destaque);
-  padding: 0px;
+  padding: 10px;
   border-radius: 5px;
   transition: 0, 4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -582,7 +580,6 @@ small {
 .add-cart:hover {
   background-color: var(--cor-primaria);
 }
-
 
 /* --------- Responsive Shop ------------- */
 @media (max-width: 1200px) {
