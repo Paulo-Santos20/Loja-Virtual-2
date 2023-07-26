@@ -4,11 +4,11 @@
 
   /*========== Colors ==========*/
   
-  --first-color: #226603;
+  --first-color: #b38b59;
   --first-color-alt: #226603;
-  --title-color: #226603;
+  --title-color: #534533;
   --text-color: #226603;
-  --container-color: #fff;
+  --container-color: #fefefe;
 
   /*========== z index ==========*/
   --z-tooltip: 10;
@@ -195,14 +195,6 @@
 
 html {
   scroll-behavior: smooth;
-}
-
-body {
-  margin: var(--header-height) 0 0 0;
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  background-color: var(--body-color);
-  color: var(--text-color);
 }
 
 ul {

@@ -171,4 +171,12 @@ li.prev_slide .image {
     left: 0;
     right: auto;
   }
+  .content h2 {
+    font-size: 32px;
+  }
+  .content a {
+    font-size: 1rem;
+    padding: 0;
+    text-transform: capitalize;
+  }
 }
